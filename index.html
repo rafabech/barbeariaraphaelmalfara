@@ -10,13 +10,19 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://barbeariaraphaelmalfara.com.br/" />
 
+  <!-- Favicon -->
   <link rel="icon" href="logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="logo.png" />
 
+  <!-- Manifest (PWA) -->
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- SEO -->
   <meta name="keywords" content="Barbearia Monte Aprazível, Barbearia Raphael Malfara, Corte masculino Monte Aprazível, Barba Monte Aprazível, Degradê Monte Aprazível, Reserva barbearia Monte Aprazível, Barbeiro Monte Aprazível SP" />
   <meta name="author" content="Barbearia Raphael Malfara" />
   <meta name="format-detection" content="telephone=yes" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Barbearia Raphael Malfara" />
   <meta property="og:title" content="Barbearia Raphael Malfara — Monte Aprazível/SP" />
@@ -25,7 +31,7 @@
   <meta property="og:image" content="https://barbeariaraphaelmalfara.com.br/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Google Search Console (cole aqui se tiver) -->
+  <!-- Google Search Console (Cole Aqui Se Tiver) -->
   <!-- <meta name="google-site-verification" content="COLE_AQUI_O_SEU_CODIGO" /> -->
 
   <style>
@@ -266,7 +272,7 @@
       border-radius: var(--radius);
     }
 
-    /* WhatsApp Flutuante (Modelo Bonito) */
+    /* WhatsApp Flutuante (Bonito / Suporte) */
     .wa-float{
       position:fixed;
       right:16px;
@@ -301,7 +307,7 @@
       display:flex;
       flex-direction:column;
       gap:2px;
-      min-width: 120px;
+      min-width: 140px;
     }
     .wa-text strong{
       font-size:13px;
@@ -315,7 +321,6 @@
       line-height:1.1;
     }
 
-    /* No Mobile: vira só bolinha */
     @media (max-width: 520px){
       .wa-text{display:none}
       .wa-float{
@@ -329,7 +334,6 @@
         width:56px;
         height:56px;
         border-radius: 18px;
-        background: rgba(37,211,102,.18);
       }
     }
 
@@ -372,6 +376,7 @@
     }
   </style>
 
+  <!-- Local SEO JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -411,12 +416,12 @@
         <img src="logo.png" alt="Logo Barbearia Raphael Malfara" loading="eager" />
         <div>
           <h1 class="name">Barbearia Raphael Malfara</h1>
-          <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • <a class="tel-link" href="tel:+5517991042868">(17) 99104-2868</a></p>
+          <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • <a class="tel-link" href="tel:+5517991042868" aria-label="Ligar para (17) 99104-2868">(17) 99104-2868</a></p>
         </div>
       </div>
 
       <div class="top-actions">
-        <a class="btn gold" href="#Reserva">Fazer Reserva</a>
+        <a class="btn gold" href="#Reserva">Fazer reserva</a>
         <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
@@ -445,7 +450,9 @@
             </div>
             <div class="row">
               <span class="k">Instagram</span>
-              <span class="v"><a class="btn ig" style="padding:8px 10px; border-radius:12px; font-size:13px;" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener">Abrir Instagram</a></span>
+              <span class="v">
+                <a class="btn ig" style="padding:8px 10px; border-radius:12px; font-size:13px;" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener">Abrir Instagram</a>
+              </span>
             </div>
           </div>
         </div>
@@ -455,7 +462,7 @@
         <div class="pad">
           <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">Horários de funcionamento</h3>
 
-          <div class="hours">
+          <div class="hours" aria-label="Horários">
             <div class="hrow"><span class="d">Terça</span><span>14:00 – 21:00</span></div>
             <div class="hrow"><span class="d">Quarta</span><span>14:00 – 21:00</span></div>
             <div class="hrow"><span class="d">Quinta</span><span>14:00 – 21:00</span></div>
@@ -590,8 +597,11 @@
 
   </main>
 
-  <!-- WhatsApp Flutuante (Bonito) -->
-  <a class="wa-float" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Preciso+de+ajuda+com+minha+reserva+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <!-- WhatsApp Flutuante (Somente Suporte) -->
+  <a class="wa-float"
+     href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Preciso+de+ajuda+com+minha+reserva+na+Barbearia+Raphael+Malfara."
+     target="_blank" rel="noopener"
+     aria-label="WhatsApp (Somente Para Suporte)">
     <span class="wa-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none">
         <path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-3.8A8 8 0 1 1 20 11.5Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
