@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+
+  <title>Barbearia Raphael Malfara em Monte Aprazível/SP | Corte, Barba e Agendamento Online</title>
+  <meta name="description" content="Barbearia Raphael Malfara em Monte Aprazível/SP. Agende online pelo Booksy, fale no WhatsApp e veja o Instagram. Endereço: R. Osvaldo Aranha, 772. Horários atualizados." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://barbeariaraphaelmalfara.com.br/" />
+
+  <!-- SEO extra -->
+  <meta name="keywords" content="barbearia Monte Aprazível, Barbearia Raphael Malfara, corte masculino Monte Aprazível, barba Monte Aprazível, degradê Monte Aprazível, agendamento barbearia Monte Aprazível, barbeiro Monte Aprazível SP" />
+  <meta name="author" content="Barbearia Raphael Malfara" />
+  <meta name="format-detection" content="telephone=yes" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Barbearia Raphael Malfara" />
+  <meta property="og:title" content="Barbearia Raphael Malfara — Monte Aprazível/SP" />
+  <meta property="og:description" content="Agende online, fale no WhatsApp e veja o Instagram. Corte e barba com técnica, estilo e conforto." />
+  <meta property="og:url" content="https://barbeariaraphaelmalfara.com.br/" />
+  <meta property="og:image" content="https://barbeariaraphaelmalfara.com.br/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Performance: preconnect (opcional) -->
+  <link rel="preconnect" href="https://www.google.com" />
+
+  <style>
+    :root{
+      --bg:#000000;
+      --card:#0b0b0b;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.75);
+      --line:rgba(255,255,255,.14);
+      --accent:#25D366; /* WhatsApp */
+      --accent2:#E1306C; /* Instagram */
+      --gold:#f6c453; /* destaque */
+      --radius:18px;
+      --max:1160px;
+      --shadow: 0 18px 45px rgba(0,0,0,.55);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:20px}
+
+    /* Top banner */
+    .top-banner{
+      border-bottom:1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)),
+        url("banner-topo.jpg");
+      background-size: cover;
+      background-position:center;
+    }
+    .top-banner .wrap{
+      padding:26px 20px 22px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      min-width:260px;
+    }
+    .brand .name{
+      font-size:22px;
+      font-weight:650;
+      letter-spacing:.2px;
+      margin:0;
+    }
+    .brand .sub{
+      font-size:13px;
+      color:var(--muted);
+      margin:0;
+    }
+    .top-actions{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      box-shadow: none;
+      font-size:14px;
+      font-weight:650;
+      white-space:nowrap;
+      transition: transform .12s ease;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .btn:active{transform: translateY(0px)}
+
+    .btn.gold{
+      border-color: rgba(246,196,83,.35);
+      background: rgba(246,196,83,.10);
+    }
+    .btn.wa{
+      border-color: rgba(37,211,102,.40);
+      background: rgba(37,211,102,.12);
+    }
+    .btn.ig{
+      border-color: rgba(225,48,108,.45);
+      background: rgba(225,48,108,.12);
+    }
+
+    /* Layout */
+    .grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:14px;
+      padding:18px 0 10px;
+    }
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .pad{padding:18px}
+
+    .headline{
+      font-size:34px;
+      line-height:1.08;
+      letter-spacing:-.4px;
+      font-weight:650;
+      margin:0 0 10px;
+    }
+    .text{
+      color:var(--muted);
+      font-size:15px;
+      margin:0;
+    }
+
+    .badges{
+      margin-top:14px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size:12px;
+    }
+    .line{height:1px; background:var(--line); margin:16px 0}
+
+    .kv{
+      display:grid;
+      gap:10px;
+      margin-top:10px;
+    }
+    .row{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      font-size:13px;
+      color: var(--muted);
+    }
+    .row .v{color:var(--text)}
+    .row .k{white-space:nowrap}
+
+    .hours{
+      display:grid;
+      gap:8px;
+      margin-top:10px;
+    }
+    .hrow{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      font-size:13px;
+      color: var(--muted);
+    }
+    .hrow .d{color:var(--text)}
+
+    /* Services + prices */
+    .services{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    .service{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+    }
+    .service .t{
+      margin:0 0 6px;
+      font-weight:650;
+      font-size:14px;
+      color: var(--text);
+    }
+    .service .d{
+      margin:0 0 10px;
+      font-size:13px;
+      color: var(--muted);
+    }
+    .price{
+      margin:0;
+      font-size:14px;
+      color: var(--gold);
+      font-weight:650;
+    }
+    .note{
+      margin:10px 0 0;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* Gallery */
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:10px;
+    }
+    .ph{
+      aspect-ratio: 1/1;
+      border-radius: 16px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      background: rgba(255,255,255,.04);
+      display:grid;
+      place-items:center;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .ph img{width:100%; height:100%; object-fit:cover; display:block}
+
+    /* Map */
+    .map{
+      width:100%;
+      min-height:320px;
+      border:0;
+      border-radius: var(--radius);
+    }
+
+    /* Floating buttons */
+    .floating{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      z-index:9999;
+    }
+    .fab{
+      width:54px;
+      height:54px;
+      border-radius: 16px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.07);
+      box-shadow: 0 18px 45px rgba(0,0,0,.60);
+      transition: transform .12s ease;
+    }
+    .fab:hover{transform: translateY(-1px)}
+    .fab:active{transform: translateY(0px)}
+
+    .fab.wa{border-color: rgba(37,211,102,.40); background: rgba(37,211,102,.14)}
+    .fab.ig{border-color: rgba(225,48,108,.45); background: rgba(225,48,108,.14)}
+
+    .fab svg{width:26px; height:26px}
+
+    /* Footer */
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:18px;
+      padding:18px 0 26px;
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+      .headline{font-size:30px}
+      .services{grid-template-columns:1fr}
+      .gallery{grid-template-columns: repeat(2, 1fr)}
+      .top-actions{width:100%; justify-content:flex-start}
+    }
+  </style>
+
+  <!-- Local SEO JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BarberShop",
+    "name":"Barbearia Raphael Malfara",
+    "url":"https://barbeariaraphaelmalfara.com.br/",
+    "telephone":"+55 17 99104-2868",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"R. Osvaldo Aranha, 772",
+      "addressLocality":"Monte Aprazível",
+      "addressRegion":"SP",
+      "postalCode":"15150-000",
+      "addressCountry":"BR"
+    },
+    "areaServed":"Monte Aprazível/SP",
+    "sameAs":[
+      "https://www.instagram.com/raphaelmalfara/",
+      "https://barbeariaraphael12.booksy.com/"
+    ],
+    "openingHoursSpecification":[
+      { "@type":"OpeningHoursSpecification", "dayOfWeek":"Tuesday", "opens":"14:00", "closes":"21:00" },
+      { "@type":"OpeningHoursSpecification", "dayOfWeek":"Wednesday", "opens":"14:00", "closes":"21:00" },
+      { "@type":"OpeningHoursSpecification", "dayOfWeek":"Thursday", "opens":"14:00", "closes":"21:00" },
+      { "@type":"OpeningHoursSpecification", "dayOfWeek":"Friday", "opens":"14:00", "closes":"21:00" },
+      { "@type":"OpeningHoursSpecification", "dayOfWeek":"Saturday", "opens":"10:00", "closes":"15:00" }
+    ],
+    "priceRange":"$$"
+  }
+  </script>
+
+  <!-- FAQ JSON-LD (ajuda muito no Google) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Como agendar na Barbearia Raphael Malfara?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Você pode agendar online pelo Booksy (sem baixar aplicativo) ou abrir o perfil no Booksy para instalar o app. Também é possível chamar no WhatsApp para combinar o melhor horário."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Onde fica a Barbearia Raphael Malfara em Monte Aprazível?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A barbearia fica na R. Osvaldo Aranha, 772 - Monte Aprazível, SP, 15150-000."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Quais são os horários de funcionamento?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Terça a sexta das 14:00 às 21:00. Sábado das 10:00 às 15:00. Domingo e segunda fechado."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- TOP BANNER (trocar banner-topo.jpg por sua imagem) -->
+  <header class="top-banner" id="inicio" role="banner" aria-label="Banner topo">
+    <div class="wrap">
+      <div class="brand">
+        <h1 class="name">Barbearia Raphael Malfara</h1>
+        <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • (17) 99104-2868</p>
+      </div>
+
+      <div class="top-actions" aria-label="Ações rápidas">
+        <a class="btn gold" href="#agendar">agendar online</a>
+        <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+um+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO + INFO -->
+    <section class="grid" aria-label="Apresentação e informações">
+      <div class="card">
+        <div class="pad">
+          <h2 class="headline">cada cliente é tratado como exclusivo</h2>
+          <p class="text">
+            Aqui você não encontra só corte e barba — encontra experiência.
+            A gente cuida de cada detalhe, unindo técnica, estilo e conforto em um ambiente moderno e cheio de personalidade.
+            O compromisso é realçar o que você tem de melhor, seja num visual clássico ou totalmente contemporâneo.
+            Mais do que transformar o look, a barbearia valoriza a sua identidade e entrega cuidado, qualidade e dedicação em cada atendimento.
+          </p>
+
+          <div class="badges" aria-label="Destaques">
+            <span class="badge">agendamento online pelo Booksy</span>
+            <span class="badge">WhatsApp para tirar dúvidas</span>
+            <span class="badge">Monte Aprazível/SP</span>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="kv" aria-label="Dados rápidos">
+            <div class="row">
+              <span class="k">telefone</span>
+              <span class="v">(17) 99104-2868</span>
+            </div>
+            <div class="row">
+              <span class="k">endereço</span>
+              <span class="v">R. Osvaldo Aranha, 772 • 15150-000</span>
+            </div>
+            <div class="row">
+              <span class="k">agendamento</span>
+              <span class="v">online e rápido</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="horarios">
+        <div class="pad">
+          <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">horários de funcionamento</h3>
+
+          <div class="hours" aria-label="Horários">
+            <div class="hrow"><span class="d">terça</span><span>14:00 – 21:00</span></div>
+            <div class="hrow"><span class="d">quarta</span><span>14:00 – 21:00</span></div>
+            <div class="hrow"><span class="d">quinta</span><span>14:00 – 21:00</span></div>
+            <div class="hrow"><span class="d">sexta</span><span>14:00 – 21:00</span></div>
+            <div class="hrow"><span class="d">sábado</span><span>10:00 – 15:00</span></div>
+            <div class="hrow"><span class="d">domingo</span><span>fechado</span></div>
+            <div class="hrow"><span class="d">segunda</span><span>fechado</span></div>
+          </div>
+
+          <div class="line"></div>
+
+          <a class="btn gold" href="#agendar">agendar online agora</a>
+          <p class="note">dica: para garantir horário, agende pelo Booksy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="card" id="agendar" aria-label="Agendamento online">
+      <div class="pad">
+        <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">agendamento online</h3>
+        <p class="text" style="margin:0 0 14px;">
+          escolha a forma mais rápida: agendar sem baixar app ou abrir o perfil no Booksy.
+        </p>
+
+        <div class="badges" style="margin-top:0">
+          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener">agendar sem baixar app</a>
+          <a class="btn" href="https://barbeariaraphael12.booksy.com/" target="_blank" rel="noopener">baixar/usar o app Booksy</a>
+          <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+um+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener">agendar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS + VALORES (conforme anexo) -->
+    <section class="card" id="servicos" aria-label="Serviços e valores">
+      <div class="pad">
+        <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">serviços e valores</h3>
+        <p class="text" style="margin:0 0 14px;">
+          valores conforme anexo. se quiser, é só trocar os números abaixo.
+        </p>
+
+        <div class="services" role="list">
+          <div class="service" role="listitem">
+            <p class="t">corte masculino</p>
+            <p class="d">degradê, social, tesoura, finalização e alinhamento</p>
+            <p class="price">R$ 00,00</p>
+          </div>
+
+          <div class="service" role="listitem">
+            <p class="t">barba</p>
+            <p class="d">desenho, alinhamento e acabamento</p>
+            <p class="price">R$ 00,00</p>
+          </div>
+
+          <div class="service" role="listitem">
+            <p class="t">combo (corte + barba)</p>
+            <p class="d">visual completo, com atenção em todos os detalhes</p>
+            <p class="price">R$ 00,00</p>
+          </div>
+
+          <div class="service" role="listitem">
+            <p class="t">acabamento / pezinho</p>
+            <p class="d">retoque rápido para manter sempre na régua</p>
+            <p class="price">R$ 00,00</p>
+          </div>
+        </div>
+
+        <p class="note">
+          dica SEO: mantenha os nomes dos serviços iguais aos que aparecem no Google e no Booksy (isso ajuda a ranquear).
+        </p>
+      </div>
+    </section>
+
+    <!-- GALERIA (4 fotos com caminho foto01..foto04) -->
+    <section class="card" id="fotos" aria-label="Galeria de fotos">
+      <div class="pad">
+        <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">fotos</h3>
+        <p class="text" style="margin:0 0 14px;">
+          substitua as imagens abaixo pelos seus arquivos. caminhos já definidos: foto01, foto02, foto03 e foto04.
+        </p>
+
+        <div class="gallery">
+          <div class="ph">
+            <img src="foto01.jpg" alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+          </div>
+          <div class="ph">
+            <img src="foto02.jpg" alt="Barba e acabamento na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+          </div>
+          <div class="ph">
+            <img src="foto03.jpg" alt="Ambiente da Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+          </div>
+          <div class="ph">
+            <img src="foto04.jpg" alt="Detalhes e estilo na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+          </div>
+        </div>
+
+        <p class="note">se você usar .webp, basta trocar para foto01.webp, foto02.webp, etc.</p>
+      </div>
+    </section>
+
+    <!-- CONTATO + MAPA -->
+    <section class="grid" aria-label="Contato e mapa">
+      <div class="card" id="contato">
+        <div class="pad">
+          <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">contato</h3>
+
+          <div class="kv">
+            <div class="row">
+              <span class="k">telefone / WhatsApp</span>
+              <span class="v">(17) 99104-2868</span>
+            </div>
+            <div class="row">
+              <span class="k">endereço</span>
+              <span class="v">R. Osvaldo Aranha, 772 - Monte Aprazível/SP</span>
+            </div>
+            <div class="row">
+              <span class="k">CEP</span>
+              <span class="v">15150-000</span>
+            </div>
+            <div class="row">
+              <span class="k">site</span>
+              <span class="v">barbeariaraphaelmalfara.com.br</span>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="badges" style="margin-top:0">
+            <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+um+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener">agendar online</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" aria-label="Mapa">
+        <div class="pad">
+          <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">como chegar</h3>
+          <iframe
+            class="map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=R.%20Osvaldo%20Aranha,%20772%20-%20Monte%20Apraz%C3%ADvel%20-%20SP%2015150-000&output=embed"
+            title="Mapa - Barbearia Raphael Malfara">
+          </iframe>
+          <p class="note">para SEO local, mantenha esse endereço idêntico ao Google Meu Negócio.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+          <div>© <span id="y"></span> Barbearia Raphael Malfara • Monte Aprazível/SP</div>
+          <div>R. Osvaldo Aranha, 772 • (17) 99104-2868</div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Floating buttons: WhatsApp + Instagram -->
+  <div class="floating" aria-label="Atalhos flutuantes">
+    <a class="fab ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" aria-label="Instagram">
+      <!-- Instagram icon -->
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="#fff" stroke-width="2"/>
+        <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="#fff" stroke-width="2"/>
+        <path d="M17.5 6.5h.01" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </a>
+
+    <a class="fab wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+um+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" aria-label="WhatsApp">
+      <!-- WhatsApp icon -->
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-3.8A8 8 0 1 1 20 11.5Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M9.2 9.2c.3-.7.6-.7 1-.7h.8c.2 0 .5 0 .7.5.2.5.8 1.8.9 2 .1.2.1.4 0 .6-.2.3-.3.4-.5.6-.2.2-.4.3-.2.6.2.3.8 1.3 1.7 2.1.9.8 1.7 1.1 2 .9.3-.2.4-.4.6-.6.2-.2.4-.2.6-.1.2.1 1.4.7 1.7.8.3.1.5.2.6.4.1.2.1 1.1-.3 1.7-.4.6-1.3 1.1-2.1 1.1-1.5 0-3.3-.8-5-2.4-1.8-1.6-2.8-3.6-2.8-5.2 0-.8.3-1.6.6-2.2Z" fill="#fff"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
