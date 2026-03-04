@@ -1,13 +1,38 @@
 {
   "name": "Barbearia Raphael Malfara",
-  "short_name": "Barbearia",
+  "short_name": "Raphael Malfara",
+  "description": "Barbearia Raphael Malfara em Monte Aprazível/SP, oferecendo serviços de corte e barba de qualidade.",
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
+  "theme_color": "#f6c453",
   "icons": [
-    { "src": "logo.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "logo.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "640x480",
+      "type": "image/png"
+    }
   ]
 }
