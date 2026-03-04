@@ -10,6 +10,10 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://barbeariaraphaelmalfara.com.br/" />
 
+  <!-- FAVICON (usa logo.png do seu repositório) -->
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
   <!-- SEO extra -->
   <meta name="keywords" content="barbearia Monte Aprazível, Barbearia Raphael Malfara, corte masculino Monte Aprazível, barba Monte Aprazível, degradê Monte Aprazível, agendamento barbearia Monte Aprazível, barbeiro Monte Aprazível SP" />
   <meta name="author" content="Barbearia Raphael Malfara" />
@@ -21,11 +25,9 @@
   <meta property="og:title" content="Barbearia Raphael Malfara — Monte Aprazível/SP" />
   <meta property="og:description" content="Agende online, fale no WhatsApp e veja o Instagram. Corte e barba com técnica, estilo e conforto." />
   <meta property="og:url" content="https://barbeariaraphaelmalfara.com.br/" />
+  <!-- Se quiser: crie um og.jpg no repo para aparecer bonito no WhatsApp -->
   <meta property="og:image" content="https://barbeariaraphaelmalfara.com.br/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Performance: preconnect (opcional) -->
-  <link rel="preconnect" href="https://www.google.com" />
 
   <style>
     :root{
@@ -57,28 +59,37 @@
     a{color:inherit; text-decoration:none}
     .wrap{max-width:var(--max); margin:0 auto; padding:20px}
 
-    /* Top banner */
+    /* TOP BANNER (usa banner.png do repo) */
     .top-banner{
       border-bottom:1px solid var(--line);
       background:
-        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)),
-        url("banner-topo.jpg");
+        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.82)),
+        url("banner.png");
       background-size: cover;
       background-position:center;
     }
     .top-banner .wrap{
-      padding:26px 20px 22px;
+      padding:22px 20px 20px;
       display:flex;
       align-items:flex-end;
       justify-content:space-between;
       gap:16px;
       flex-wrap:wrap;
     }
+
     .brand{
       display:flex;
-      flex-direction:column;
-      gap:6px;
+      align-items:center;
+      gap:12px;
       min-width:260px;
+    }
+    .brand img{
+      width:54px;
+      height:54px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      object-fit:cover;
     }
     .brand .name{
       font-size:22px;
@@ -89,8 +100,9 @@
     .brand .sub{
       font-size:13px;
       color:var(--muted);
-      margin:0;
+      margin:2px 0 0;
     }
+
     .top-actions{
       display:flex;
       gap:10px;
@@ -129,6 +141,10 @@
     .btn.ig{
       border-color: rgba(225,48,108,.45);
       background: rgba(225,48,108,.12);
+    }
+    .btn.ghost{
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
     }
 
     /* Layout */
@@ -251,7 +267,7 @@
       color:var(--muted);
     }
 
-    /* Gallery */
+    /* Gallery (usa foto01.png ... foto04.png) */
     .gallery{
       display:grid;
       grid-template-columns: repeat(4, 1fr);
@@ -263,10 +279,6 @@
       border:1px solid var(--line);
       overflow:hidden;
       background: rgba(255,255,255,.04);
-      display:grid;
-      place-items:center;
-      color:var(--muted);
-      font-size:12px;
     }
     .ph img{width:100%; height:100%; object-fit:cover; display:block}
 
@@ -307,7 +319,6 @@
 
     .fab svg{width:26px; height:26px}
 
-    /* Footer */
     footer{
       border-top:1px solid var(--line);
       margin-top:18px;
@@ -316,13 +327,15 @@
       font-size:12px;
     }
 
-    /* Responsive */
+    /* Banner ajustado PC vs celular */
     @media (max-width: 980px){
       .grid{grid-template-columns:1fr}
       .headline{font-size:30px}
       .services{grid-template-columns:1fr}
       .gallery{grid-template-columns: repeat(2, 1fr)}
       .top-actions{width:100%; justify-content:flex-start}
+      .top-banner .wrap{padding:18px 20px 18px}
+      .brand img{width:48px; height:48px}
     }
   </style>
 
@@ -358,7 +371,7 @@
   }
   </script>
 
-  <!-- FAQ JSON-LD (ajuda muito no Google) -->
+  <!-- FAQ JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -369,7 +382,7 @@
         "name":"Como agendar na Barbearia Raphael Malfara?",
         "acceptedAnswer":{
           "@type":"Answer",
-          "text":"Você pode agendar online pelo Booksy (sem baixar aplicativo) ou abrir o perfil no Booksy para instalar o app. Também é possível chamar no WhatsApp para combinar o melhor horário."
+          "text":"Você pode agendar online pelo Booksy (sem baixar aplicativo) ou abrir o perfil no Booksy para usar o app. Também é possível chamar no WhatsApp para combinar o melhor horário."
         }
       },
       {
@@ -395,12 +408,15 @@
 
 <body>
 
-  <!-- TOP BANNER (trocar banner-topo.jpg por sua imagem) -->
+  <!-- TOP BANNER (banner.png) -->
   <header class="top-banner" id="inicio" role="banner" aria-label="Banner topo">
     <div class="wrap">
-      <div class="brand">
-        <h1 class="name">Barbearia Raphael Malfara</h1>
-        <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • (17) 99104-2868</p>
+      <div class="brand" aria-label="Marca">
+        <img src="logo.png" alt="Logo Barbearia Raphael Malfara" loading="eager" />
+        <div>
+          <h1 class="name">Barbearia Raphael Malfara</h1>
+          <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • (17) 99104-2868</p>
+        </div>
       </div>
 
       <div class="top-actions" aria-label="Ações rápidas">
@@ -413,7 +429,6 @@
 
   <main class="wrap">
 
-    <!-- HERO + INFO -->
     <section class="grid" aria-label="Apresentação e informações">
       <div class="card">
         <div class="pad">
@@ -467,12 +482,11 @@
           <div class="line"></div>
 
           <a class="btn gold" href="#agendar">agendar online agora</a>
-          <p class="note">dica: para garantir horário, agende pelo Booksy.</p>
+          <p class="note">para garantir horário, agende pelo Booksy.</p>
         </div>
       </div>
     </section>
 
-    <!-- AGENDAMENTO -->
     <section class="card" id="agendar" aria-label="Agendamento online">
       <div class="pad">
         <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">agendamento online</h3>
@@ -482,13 +496,12 @@
 
         <div class="badges" style="margin-top:0">
           <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener">agendar sem baixar app</a>
-          <a class="btn" href="https://barbeariaraphael12.booksy.com/" target="_blank" rel="noopener">baixar/usar o app Booksy</a>
+          <a class="btn ghost" href="https://barbeariaraphael12.booksy.com/" target="_blank" rel="noopener">abrir no Booksy</a>
           <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+um+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener">agendar no WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- SERVIÇOS + VALORES (conforme anexo) -->
     <section class="card" id="servicos" aria-label="Serviços e valores">
       <div class="pad">
         <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">serviços e valores</h3>
@@ -521,41 +534,33 @@
             <p class="price">R$ 00,00</p>
           </div>
         </div>
-
-        <p class="note">
-          dica SEO: mantenha os nomes dos serviços iguais aos que aparecem no Google e no Booksy (isso ajuda a ranquear).
-        </p>
       </div>
     </section>
 
-    <!-- GALERIA (4 fotos com caminho foto01..foto04) -->
     <section class="card" id="fotos" aria-label="Galeria de fotos">
       <div class="pad">
         <h3 style="margin:0 0 10px; font-size:16px; font-weight:650;">fotos</h3>
         <p class="text" style="margin:0 0 14px;">
-          substitua as imagens abaixo pelos seus arquivos. caminhos já definidos: foto01, foto02, foto03 e foto04.
+          suas fotos já estão no repositório. aqui é onde elas aparecem no site.
         </p>
 
         <div class="gallery">
           <div class="ph">
-            <img src="foto01.jpg" alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+            <img src="foto01.png" alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
           </div>
           <div class="ph">
-            <img src="foto02.jpg" alt="Barba e acabamento na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+            <img src="foto02.png" alt="Barba e acabamento na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
           </div>
           <div class="ph">
-            <img src="foto03.jpg" alt="Ambiente da Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+            <img src="foto03.png" alt="Ambiente da Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
           </div>
           <div class="ph">
-            <img src="foto04.jpg" alt="Detalhes e estilo na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
+            <img src="foto04.png" alt="Detalhes e estilo na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy">
           </div>
         </div>
-
-        <p class="note">se você usar .webp, basta trocar para foto01.webp, foto02.webp, etc.</p>
       </div>
     </section>
 
-    <!-- CONTATO + MAPA -->
     <section class="grid" aria-label="Contato e mapa">
       <div class="card" id="contato">
         <div class="pad">
@@ -600,7 +605,6 @@
             src="https://www.google.com/maps?q=R.%20Osvaldo%20Aranha,%20772%20-%20Monte%20Apraz%C3%ADvel%20-%20SP%2015150-000&output=embed"
             title="Mapa - Barbearia Raphael Malfara">
           </iframe>
-          <p class="note">para SEO local, mantenha esse endereço idêntico ao Google Meu Negócio.</p>
         </div>
       </div>
     </section>
@@ -616,10 +620,9 @@
 
   </main>
 
-  <!-- Floating buttons: WhatsApp + Instagram -->
+  <!-- Botões flutuantes: WhatsApp + Instagram -->
   <div class="floating" aria-label="Atalhos flutuantes">
     <a class="fab ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" aria-label="Instagram">
-      <!-- Instagram icon -->
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="#fff" stroke-width="2"/>
         <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="#fff" stroke-width="2"/>
@@ -628,7 +631,6 @@
     </a>
 
     <a class="fab wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+um+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" aria-label="WhatsApp">
-      <!-- WhatsApp icon -->
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-3.8A8 8 0 1 1 20 11.5Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
         <path d="M9.2 9.2c.3-.7.6-.7 1-.7h.8c.2 0 .5 0 .7.5.2.5.8 1.8.9 2 .1.2.1.4 0 .6-.2.3-.3.4-.5.6-.2.2-.4.3-.2.6.2.3.8 1.3 1.7 2.1.9.8 1.7 1.1 2 .9.3-.2.4-.4.6-.6.2-.2.4-.2.6-.1.2.1 1.4.7 1.7.8.3.1.5.2.6.4.1.2.1 1.1-.3 1.7-.4.6-1.3 1.1-2.1 1.1-1.5 0-3.3-.8-5-2.4-1.8-1.6-2.8-3.6-2.8-5.2 0-.8.3-1.6.6-2.2Z" fill="#fff"/>
