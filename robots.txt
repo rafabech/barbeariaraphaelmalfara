@@ -1,41 +1,4 @@
-# Robots.txt para o site barbeariaraphaelmalfara.com.br
-
-# Permite o acesso completo ao Googlebot
-User-agent: Googlebot
-Disallow:
-
-# Bloqueia outros bots de acessar áreas privadas, como admin e login
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /dados-sensiveis/
+Allow: /
 
-# Permite acesso ao conteúdo da galeria de fotos
-User-agent: *
-Allow: /galeria.html
-Allow: /fotos/
-
-# Permite o acesso ao conteúdo das páginas principais
-User-agent: *
-Disallow:
-
-# Bloqueia o acesso a arquivos sensíveis, como PDFs e outros tipos de documentos
-User-agent: *
-Disallow: /*.pdf$
-Disallow: /*.doc$
-Disallow: /*.xls$
-
-# Permite o acesso ao seu sitemap para indexação
 Sitemap: https://barbeariaraphaelmalfara.com.br/sitemap.xml
-
-# Impede o acesso a arquivos de configuração do site
-User-agent: *
-Disallow: /config/
-
-# Bloqueia o acesso a uma pasta com dados privados ou confidenciais
-User-agent: *
-Disallow: /private/
-
-# Especifica que a página de agendamento de reservas está aberta ao Googlebot
-User-agent: Googlebot
-Allow: /fazer-reserva/
