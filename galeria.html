@@ -1,234 +1,340 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
 
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<meta name="theme-color" content="#000000"/>
+  <title>Galeria | Barbearia Raphael Malfara em Monte Aprazível/SP</title>
+  <meta name="description" content="Galeria da Barbearia Raphael Malfara em Monte Aprazível/SP com fotos de cortes masculinos, clientes, jogadores de futebol e momentos especiais da barbearia." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://barbeariaraphaelmalfara.com.br/galeria.html" />
 
-<title>Galeria | Barbearia Raphael Malfara em Monte Aprazível/SP</title>
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="shortcut icon" href="/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
 
-<meta name="description" content="Galeria da Barbearia Raphael Malfara em Monte Aprazível/SP com fotos de cortes masculinos, clientes, jogadores de futebol e momentos especiais da barbearia."/>
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Barbearia Raphael Malfara" />
+  <meta property="og:title" content="Galeria | Barbearia Raphael Malfara" />
+  <meta property="og:description" content="Fotos de cortes masculinos, clientes e momentos especiais na Barbearia Raphael Malfara em Monte Aprazível." />
+  <meta property="og:url" content="https://barbeariaraphaelmalfara.com.br/galeria.html" />
+  <meta property="og:image" content="https://barbeariaraphaelmalfara.com.br/foto01.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<meta name="robots" content="index,follow,max-image-preview:large"/>
+  <style>
+    :root{
+      --bg:#000;
+      --text:#fff;
+      --muted:rgba(255,255,255,.78);
+      --line:rgba(255,255,255,.14);
+      --max:1160px;
+      --shadow:0 18px 45px rgba(0,0,0,.55);
+      --shadow2:0 22px 60px rgba(0,0,0,.70);
+    }
 
-<link rel="canonical" href="https://barbeariaraphaelmalfara.com.br/galeria.html"/>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
 
-<link rel="icon" href="/logo.png" type="image/png"/>
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:auto;padding:20px}
 
-<style>
+    .top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-bottom:16px;
+    }
 
-:root{
---bg:#000;
---text:#fff;
---muted:rgba(255,255,255,.78);
---line:rgba(255,255,255,.14);
---max:1160px;
---shadow:0 18px 45px rgba(0,0,0,.55);
-}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      font-weight:600;
+    }
 
-*{box-sizing:border-box}
+    .intro{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      padding:18px;
+      margin-bottom:16px;
+      box-shadow:var(--shadow);
+    }
 
-body{
-margin:0;
-background:var(--bg);
-color:var(--text);
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-}
+    .intro h1{
+      margin:0 0 8px;
+      font-size:24px;
+      line-height:1.2;
+    }
 
-.wrap{
-max-width:var(--max);
-margin:auto;
-padding:20px;
-}
+    .intro p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      max-width:760px;
+      font-size:14px;
+    }
 
-.top{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-gap:12px;
-margin-bottom:16px;
-}
+    .card{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:14px;
+    }
 
-.btn{
-padding:12px 16px;
-border-radius:14px;
-border:1px solid var(--line);
-background:rgba(255,255,255,.06);
-font-weight:600;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:10px;
+    }
 
-.intro{
-border:1px solid var(--line);
-background:rgba(255,255,255,.04);
-border-radius:18px;
-padding:18px;
-margin-bottom:16px;
-}
+    .ph{
+      aspect-ratio:1/1;
+      border-radius:16px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      background:rgba(255,255,255,.04);
+      cursor:zoom-in;
+    }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:10px;
-}
+    .ph img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
 
-.ph{
-aspect-ratio:1/1;
-border-radius:16px;
-border:1px solid var(--line);
-overflow:hidden;
-cursor:zoom-in;
-}
+    .bottom{
+      text-align:center;
+      margin-top:25px;
+    }
 
-.ph img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-}
+    .modal{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.9);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+      padding:16px;
+    }
 
-.modal{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.9);
-display:none;
-align-items:center;
-justify-content:center;
-z-index:9999;
-}
+    .modal.open{display:flex}
 
-.modal.open{display:flex;}
+    .modal img{
+      max-width:95vw;
+      max-height:85vh;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#000;
+    }
 
-.modal img{
-max-width:95vw;
-max-height:85vh;
-border-radius:14px;
-}
+    .close{
+      position:fixed;
+      top:14px;
+      right:14px;
+      width:46px;
+      height:46px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      display:grid;
+      place-items:center;
+      font-size:20px;
+      cursor:pointer;
+      color:#fff;
+    }
 
-.close{
-position:fixed;
-top:14px;
-right:14px;
-width:46px;
-height:46px;
-border-radius:14px;
-border:1px solid var(--line);
-background:rgba(255,255,255,.06);
-display:grid;
-place-items:center;
-font-size:20px;
-cursor:pointer;
-}
+    .wa-float{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:9998;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid rgba(37,211,102,.35);
+      background:linear-gradient(135deg, rgba(37,211,102,.25), rgba(255,255,255,.06));
+      box-shadow:var(--shadow2);
+      backdrop-filter:blur(10px);
+    }
 
-.bottom{
-text-align:center;
-margin-top:25px;
-}
+    .wa-icon{
+      width:44px;
+      height:44px;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      background:rgba(37,211,102,.2);
+      border:1px solid rgba(37,211,102,.35);
+    }
 
-.wa{
-position:fixed;
-right:16px;
-bottom:16px;
-background:#25D366;
-width:56px;
-height:56px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 20px 40px rgba(0,0,0,.4);
-}
+    .wa-icon svg{width:22px;height:22px}
+    .wa-text{display:flex;flex-direction:column;gap:2px;min-width:140px}
+    .wa-text strong{font-size:13px;line-height:1.1}
+    .wa-text span{font-size:12px;color:rgba(255,255,255,.75);line-height:1.1}
 
-@media(max-width:900px){
-.grid{grid-template-columns:repeat(3,1fr);}
-}
-
-@media(max-width:560px){
-.grid{grid-template-columns:repeat(2,1fr);}
-}
-
-</style>
-
+    @media(max-width:1100px){ .grid{grid-template-columns:repeat(4,1fr)} }
+    @media(max-width:900px){ .grid{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:560px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .wa-text{display:none}
+      .wa-float{
+        width:56px;
+        height:56px;
+        padding:0;
+        justify-content:center;
+        border-radius:18px;
+      }
+      .wa-icon{
+        width:56px;
+        height:56px;
+        border-radius:18px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="wrap">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div style="font-size:20px;font-weight:650;">Galeria</div>
+        <div style="color:var(--muted);font-size:13px;">Barbearia Raphael Malfara • Monte Aprazível/SP</div>
+      </div>
+      <a class="btn" href="index.html">Voltar para o site</a>
+    </div>
 
-<div class="top">
-<div>
-<div style="font-size:20px;font-weight:650;">Galeria</div>
-<div style="color:var(--muted);font-size:13px;">Barbearia Raphael Malfara • Monte Aprazível/SP</div>
-</div>
+    <section class="intro">
+      <h1>Galeria da Barbearia Raphael Malfara</h1>
+      <p>
+        A galeria mostra cortes masculinos realizados na Barbearia Raphael Malfara em Monte Aprazível/SP, além de momentos especiais com clientes e jogadores de futebol que passaram pela barbearia, incluindo fotos, camisas e chuteiras autografadas.
+      </p>
+    </section>
 
-<a class="btn" href="index.html">Voltar para o site</a>
-</div>
+    <div class="card">
+      <div class="grid" id="grid">
+        <div class="ph"><img src="foto01.png" alt="Corte masculino realizado na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto02.png" alt="Barbeiro Raphael Malfara realizando corte masculino" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto03.png" alt="Serviço de barba na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto04.png" alt="Corte degradê masculino em Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
 
-<div class="intro">
+        <div class="ph"><img src="foto05.jpeg" alt="Cliente atendido na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto06.jpeg" alt="Corte masculino moderno feito em Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto07.jpeg" alt="Estilo de corte masculino em barbearia profissional" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto08.jpeg" alt="Barbearia Raphael Malfara com cliente atendido" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto09.jpeg" alt="Corte masculino realizado em Monte Aprazível SP" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto10.jpeg" alt="Barbeiro Raphael Malfara trabalhando" loading="lazy" decoding="async" width="400" height="400"></div>
 
-<h1>Galeria da Barbearia Raphael Malfara</h1>
+        <div class="ph"><img src="foto11.jpeg" alt="Corte masculino estilo moderno" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto12.jpeg" alt="Cliente após corte masculino" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto13.jpeg" alt="Barbearia Raphael Malfara Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto14.jpeg" alt="Foto com cliente na barbearia" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto15.jpeg" alt="Momento especial na barbearia" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto16.jpeg" alt="Corte masculino profissional" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto17.jpeg" alt="Cliente satisfeito após corte" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto18.jpeg" alt="Corte masculino estilo degradê" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto19.jpeg" alt="Foto com cliente atendido" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto20.jpeg" alt="Corte masculino moderno" loading="lazy" decoding="async" width="400" height="400"></div>
 
-<p>
-A galeria mostra cortes masculinos realizados na Barbearia Raphael Malfara em Monte Aprazível/SP, além de momentos especiais com clientes e jogadores de futebol que passaram pela barbearia, incluindo fotos, camisas e chuteiras autografadas.
-</p>
+        <div class="ph"><img src="foto21.jpeg" alt="Barbearia Raphael Malfara Monte Aprazível SP" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto22.jpeg" alt="Cliente atendido pelo barbeiro Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto23.jpeg" alt="Registro na barbearia com cliente" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto24.jpeg" alt="Momento registrado na barbearia" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto25.jpeg" alt="Foto com cliente na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto26.jpeg" alt="Barbearia Raphael Malfara atendimento masculino" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto27.jpeg" alt="Cliente atendido na barbearia em Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto28.jpeg" alt="Registro na barbearia com cliente" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto29.jpeg" alt="Foto especial na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto30.jpeg" alt="Galeria da Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
 
-</div>
+        <div class="ph"><img src="foto31.jpeg" alt="Cliente atendido na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto32.jpeg" alt="Corte masculino realizado na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto33.jpeg" alt="Foto com cliente na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto34.jpeg" alt="Registro de cliente após corte masculino na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto35.jpeg" alt="Momento especial com cliente na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto36.jpeg" alt="Barbeiro Raphael Malfara com cliente atendido em Monte Aprazível" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto37.jpeg" alt="Cliente satisfeito após corte masculino na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto38.jpeg" alt="Foto na Barbearia Raphael Malfara em Monte Aprazível SP" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto39.jpeg" alt="Momento especial registrado na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+        <div class="ph"><img src="foto40.jpeg" alt="Foto com cliente ou jogador de futebol na Barbearia Raphael Malfara" loading="lazy" decoding="async" width="400" height="400"></div>
+      </div>
+    </div>
 
-<div class="grid" id="grid">
+    <div class="bottom">
+      <a class="btn" href="index.html">← Voltar para o site</a>
+    </div>
+  </div>
 
-<!-- fotos 1 até 40 -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="close" id="close" aria-label="Fechar imagem ampliada">✕</div>
+    <img id="modalImg" src="" alt="Foto ampliada da galeria">
+  </div>
 
-<script>
-for(let i=1;i<=40;i++){
-let ext=i<=4?"png":"jpeg"
-document.write(`
-<div class="ph">
-<img src="foto${String(i).padStart(2,'0')}.${ext}" loading="lazy">
-</div>
-`)
-}
-</script>
+  <a class="wa-float"
+     href="https://wa.me/5517991042868?text=Olá!%20Gostaria%20de%20informações%20sobre%20a%20Barbearia%20Raphael%20Malfara."
+     target="_blank"
+     rel="noopener"
+     aria-label="WhatsApp da Barbearia Raphael Malfara"
+     title="Falar no WhatsApp">
+    <span class="wa-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-3.8A8 8 0 1 1 20 11.5Z" stroke="#fff" stroke-width="2"/>
+        <path d="M9.2 9.2c.3-.7.6-.7 1-.7h.8c.2 0 .5 0 .7.5.2.5.8 1.8.9 2 .1.2.1.4 0 .6-.2.3-.3.4-.5.6-.2.2-.4.3-.2.6.2.3.8 1.3 1.7 2.1.9.8 1.7 1.1 2 .9.3-.2.4-.4.6-.6.2-.2.4-.2.6-.1.2.1 1.4.7 1.7.8.3.1.5.2.6.4.1.2.1 1.1-.3 1.7-.4.6-1.3 1.1-2.1 1.1-1.5 0-3.3-.8-5-2.4-1.8-1.6-2.8-3.6-2.8-5.2 0-.8.3-1.6.6-2.2Z" fill="#fff"/>
+      </svg>
+    </span>
+    <span class="wa-text">
+      <strong>WhatsApp</strong>
+      <span>Falar agora</span>
+    </span>
+  </a>
 
-</div>
+  <script>
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementById("close");
 
-<div class="bottom">
-<a class="btn" href="index.html">← Voltar para o site</a>
-</div>
+    document.getElementById("grid").addEventListener("click", (e) => {
+      const img = e.target.closest("img");
+      if (!img) return;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
 
-</div>
+    function closeModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      modalImg.src = "";
+    }
 
-<div class="modal" id="modal">
-<div class="close" id="close">✕</div>
-<img id="modalImg">
-</div>
-
-<a class="wa" href="https://wa.me/5517991042868" target="_blank">
-<svg viewBox="0 0 24 24" width="28" height="28" fill="#fff">
-<path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-3.8A8 8 0 1 1 20 11.5Z"/>
-</svg>
-</a>
-
-<script>
-
-const modal=document.getElementById("modal")
-const modalImg=document.getElementById("modalImg")
-const close=document.getElementById("close")
-
-document.getElementById("grid").addEventListener("click",e=>{
-const img=e.target.closest("img")
-if(!img)return
-modal.classList.add("open")
-modalImg.src=img.src
-})
-
-close.onclick=()=>modal.classList.remove("open")
-
-modal.onclick=e=>{
-if(e.target===modal) modal.classList.remove("open")
-}
-
-</script>
-
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+  </script>
 </body>
 </html>
