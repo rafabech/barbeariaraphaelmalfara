@@ -16,26 +16,15 @@
 
 <link rel="icon" href="/logo.png" type="image/png"/>
 
-<meta property="og:type" content="website"/>
-<meta property="og:locale" content="pt_BR"/>
-<meta property="og:site_name" content="Barbearia Raphael Malfara"/>
-<meta property="og:title" content="Galeria | Barbearia Raphael Malfara"/>
-<meta property="og:description" content="Fotos de cortes masculinos, clientes e momentos especiais na Barbearia Raphael Malfara em Monte Aprazível."/>
-<meta property="og:url" content="https://barbeariaraphaelmalfara.com.br/galeria.html"/>
-<meta property="og:image" content="https://barbeariaraphaelmalfara.com.br/foto01.png"/>
-
-<meta name="twitter:card" content="summary_large_image"/>
-
 <style>
 
 :root{
---bg:#000000;
---text:#ffffff;
+--bg:#000;
+--text:#fff;
 --muted:rgba(255,255,255,.78);
 --line:rgba(255,255,255,.14);
 --max:1160px;
 --shadow:0 18px 45px rgba(0,0,0,.55);
---shadow2:0 22px 60px rgba(0,0,0,.70);
 }
 
 *{box-sizing:border-box}
@@ -45,14 +34,11 @@ margin:0;
 background:var(--bg);
 color:var(--text);
 font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
--webkit-font-smoothing:antialiased;
 }
-
-a{color:inherit;text-decoration:none}
 
 .wrap{
 max-width:var(--max);
-margin:0 auto;
+margin:auto;
 padding:20px;
 }
 
@@ -62,48 +48,23 @@ justify-content:space-between;
 align-items:center;
 flex-wrap:wrap;
 gap:12px;
-margin-bottom:14px;
+margin-bottom:16px;
 }
 
 .btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
 padding:12px 16px;
 border-radius:14px;
 border:1px solid var(--line);
 background:rgba(255,255,255,.06);
-font-weight:650;
+font-weight:600;
 }
 
 .intro{
 border:1px solid var(--line);
 background:rgba(255,255,255,.04);
 border-radius:18px;
-box-shadow:var(--shadow);
 padding:18px;
-margin-bottom:14px;
-}
-
-.intro h1{
-margin:0 0 8px;
-font-size:24px;
-}
-
-.intro p{
-margin:0;
-color:var(--muted);
-font-size:14px;
-line-height:1.6;
-max-width:760px;
-}
-
-.card{
-border:1px solid var(--line);
-background:rgba(255,255,255,.04);
-border-radius:18px;
-box-shadow:var(--shadow);
-padding:14px;
+margin-bottom:16px;
 }
 
 .grid{
@@ -161,27 +122,22 @@ cursor:pointer;
 }
 
 .bottom{
-margin-top:25px;
 text-align:center;
+margin-top:25px;
 }
 
-.wa-float{
+.wa{
 position:fixed;
 right:16px;
 bottom:16px;
-z-index:9999;
+background:#25D366;
+width:56px;
+height:56px;
+border-radius:50%;
 display:flex;
 align-items:center;
-padding:12px;
-border-radius:999px;
-background:#25D366;
-box-shadow:var(--shadow2);
-}
-
-.wa-float svg{
-width:24px;
-height:24px;
-fill:#fff;
+justify-content:center;
+box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
 @media(max-width:900px){
@@ -201,17 +157,15 @@ fill:#fff;
 <div class="wrap">
 
 <div class="top">
-
 <div>
 <div style="font-size:20px;font-weight:650;">Galeria</div>
 <div style="color:var(--muted);font-size:13px;">Barbearia Raphael Malfara • Monte Aprazível/SP</div>
 </div>
 
 <a class="btn" href="index.html">Voltar para o site</a>
-
 </div>
 
-<section class="intro">
+<div class="intro">
 
 <h1>Galeria da Barbearia Raphael Malfara</h1>
 
@@ -219,60 +173,22 @@ fill:#fff;
 A galeria mostra cortes masculinos realizados na Barbearia Raphael Malfara em Monte Aprazível/SP, além de momentos especiais com clientes e jogadores de futebol que passaram pela barbearia, incluindo fotos, camisas e chuteiras autografadas.
 </p>
 
-</section>
-
-<div class="card">
+</div>
 
 <div class="grid" id="grid">
 
-<!-- 1 a 40 -->
+<!-- fotos 1 até 40 -->
 
-<img src="foto01.png" loading="lazy">
-<img src="foto02.png" loading="lazy">
-<img src="foto03.png" loading="lazy">
-<img src="foto04.png" loading="lazy">
-
-<img src="foto05.jpeg" loading="lazy">
-<img src="foto06.jpeg" loading="lazy">
-<img src="foto07.jpeg" loading="lazy">
-<img src="foto08.jpeg" loading="lazy">
-<img src="foto09.jpeg" loading="lazy">
-<img src="foto10.jpeg" loading="lazy">
-
-<img src="foto11.jpeg" loading="lazy">
-<img src="foto12.jpeg" loading="lazy">
-<img src="foto13.jpeg" loading="lazy">
-<img src="foto14.jpeg" loading="lazy">
-<img src="foto15.jpeg" loading="lazy">
-<img src="foto16.jpeg" loading="lazy">
-<img src="foto17.jpeg" loading="lazy">
-<img src="foto18.jpeg" loading="lazy">
-<img src="foto19.jpeg" loading="lazy">
-<img src="foto20.jpeg" loading="lazy">
-
-<img src="foto21.jpeg" loading="lazy">
-<img src="foto22.jpeg" loading="lazy">
-<img src="foto23.jpeg" loading="lazy">
-<img src="foto24.jpeg" loading="lazy">
-<img src="foto25.jpeg" loading="lazy">
-<img src="foto26.jpeg" loading="lazy">
-<img src="foto27.jpeg" loading="lazy">
-<img src="foto28.jpeg" loading="lazy">
-<img src="foto29.jpeg" loading="lazy">
-<img src="foto30.jpeg" loading="lazy">
-
-<img src="foto31.jpeg" loading="lazy">
-<img src="foto32.jpeg" loading="lazy">
-<img src="foto33.jpeg" loading="lazy">
-<img src="foto34.jpeg" loading="lazy">
-<img src="foto35.jpeg" loading="lazy">
-<img src="foto36.jpeg" loading="lazy">
-<img src="foto37.jpeg" loading="lazy">
-<img src="foto38.jpeg" loading="lazy">
-<img src="foto39.jpeg" loading="lazy">
-<img src="foto40.jpeg" loading="lazy">
-
+<script>
+for(let i=1;i<=40;i++){
+let ext=i<=4?"png":"jpeg"
+document.write(`
+<div class="ph">
+<img src="foto${String(i).padStart(2,'0')}.${ext}" loading="lazy">
 </div>
+`)
+}
+</script>
 
 </div>
 
@@ -287,17 +203,10 @@ A galeria mostra cortes masculinos realizados na Barbearia Raphael Malfara em Mo
 <img id="modalImg">
 </div>
 
-<a class="wa-float"
-href="https://wa.me/5517991042868"
-target="_blank"
-rel="noopener">
-
-<svg viewBox="0 0 24 24">
-
+<a class="wa" href="https://wa.me/5517991042868" target="_blank">
+<svg viewBox="0 0 24 24" width="28" height="28" fill="#fff">
 <path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-3.8A8 8 0 1 1 20 11.5Z"/>
-
 </svg>
-
 </a>
 
 <script>
@@ -307,10 +216,10 @@ const modalImg=document.getElementById("modalImg")
 const close=document.getElementById("close")
 
 document.getElementById("grid").addEventListener("click",e=>{
-if(e.target.tagName==="IMG"){
+const img=e.target.closest("img")
+if(!img)return
 modal.classList.add("open")
-modalImg.src=e.target.src
-}
+modalImg.src=img.src
 })
 
 close.onclick=()=>modal.classList.remove("open")
