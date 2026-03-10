@@ -1,21 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://barbeariaraphaelmalfara.com.br/</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://barbeariaraphaelmalfara.com.br/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://barbeariaraphaelmalfara.com.br/banner.png</image:loc>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://barbeariaraphaelmalfara.com.br/quem-somos.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://barbeariaraphaelmalfara.com.br/barbearia-raphael-malfara-monte-aprazivel.jpg</image:loc>
     </image:image>
   </url>
 
   <url>
     <loc>https://barbeariaraphaelmalfara.com.br/galeria.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <priority>0.7</priority>
+
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto01.png</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto02.png</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto03.png</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto04.png</image:loc></image:image>
+
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto05.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto06.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto07.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto08.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto09.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto10.jpeg</image:loc></image:image>
+
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto11.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto12.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto13.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto14.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto15.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto16.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto17.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto18.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto19.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto20.jpeg</image:loc></image:image>
+
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto21.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto22.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto23.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto24.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto25.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto26.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto27.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto28.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto29.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto30.jpeg</image:loc></image:image>
+
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto31.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto32.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto33.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto34.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto35.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto36.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto37.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto38.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto39.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto40.jpeg</image:loc></image:image>
+
   </url>
 
 </urlset>
