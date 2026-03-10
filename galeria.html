@@ -29,6 +29,8 @@
       --text:#fff;
       --muted:rgba(255,255,255,.78);
       --line:rgba(255,255,255,.14);
+      --gold:#f6c453;
+      --ig:#E1306C;
       --max:1160px;
       --shadow:0 18px 45px rgba(0,0,0,.55);
       --shadow2:0 22px 60px rgba(0,0,0,.70);
@@ -47,13 +49,58 @@
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--max);margin:auto;padding:20px}
 
-    .top{
+    header.site-header{
+      border-bottom:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.88) 100%);
+      margin-bottom:18px;
+    }
+
+    header.site-header .wrap{
+      width:100%;
+      padding:22px 20px 18px;
       display:flex;
+      align-items:flex-start;
       justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:260px;
+    }
+
+    .brand img{
+      width:56px;
+      height:56px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      object-fit:cover;
+      flex:0 0 auto;
+    }
+
+    .name{
+      font-size:22px;
+      font-weight:650;
+      letter-spacing:.2px;
+      margin:0;
+    }
+
+    .sub{
+      font-size:13px;
+      color:var(--muted);
+      margin:2px 0 0;
+    }
+
+    .top-actions{
+      display:flex;
+      gap:10px;
       align-items:center;
       flex-wrap:wrap;
-      gap:12px;
-      margin-bottom:16px;
+      justify-content:flex-end;
     }
 
     .btn{
@@ -65,7 +112,14 @@
       border:1px solid var(--line);
       background:rgba(255,255,255,.06);
       font-weight:600;
+      transition:transform .12s ease;
     }
+
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn.gold{border-color:rgba(246,196,83,.35); background:rgba(246,196,83,.10);}
+    .btn.ig{border-color:rgba(225,48,108,.45); background:rgba(225,48,108,.12);}
+    .btn.outline{border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.04);}
 
     .intro{
       border:1px solid var(--line);
@@ -194,7 +248,11 @@
     .wa-text span{font-size:12px;color:rgba(255,255,255,.75);line-height:1.1}
 
     @media(max-width:1100px){ .grid{grid-template-columns:repeat(4,1fr)} }
-    @media(max-width:900px){ .grid{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:900px){
+      .grid{grid-template-columns:repeat(3,1fr)}
+      .top-actions{width:100%;justify-content:flex-start}
+      .brand img{width:48px;height:48px}
+    }
     @media(max-width:560px){
       .grid{grid-template-columns:repeat(2,1fr)}
       .wa-text{display:none}
@@ -215,15 +273,27 @@
 </head>
 <body>
 
-  <div class="wrap">
-    <div class="top">
-      <div>
-        <div style="font-size:20px;font-weight:650;">Galeria</div>
-        <div style="color:var(--muted);font-size:13px;">Barbearia Raphael Malfara • Monte Aprazível/SP</div>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <img src="logo.png" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" width="56" height="56" />
+        <div>
+          <h1 class="name">Barbearia Raphael Malfara</h1>
+          <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • (17) 99104-2868</p>
+        </div>
       </div>
-      <a class="btn" href="index.html">Voltar para o site</a>
-    </div>
 
+      <div class="top-actions">
+        <a class="btn outline" href="index.html" title="Voltar para a página inicial">Início</a>
+        <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
+        <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva na Barbearia Raphael Malfara">Faça sua reserva</a>
+        <a class="btn outline" href="galeria.html" title="Ver galeria da Barbearia Raphael Malfara">Galeria</a>
+        <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram da Barbearia Raphael Malfara">Instagram</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
     <section class="intro">
       <h1>Galeria da Barbearia Raphael Malfara</h1>
       <p>
@@ -281,7 +351,7 @@
     </div>
 
     <div class="bottom">
-      <a class="btn" href="index.html">← Voltar para o site</a>
+      <a class="btn outline" href="index.html">← Voltar para o site</a>
     </div>
   </div>
 
