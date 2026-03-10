@@ -65,7 +65,7 @@
 
     header.site-header{
       border-bottom:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.88) 100%);
+      background:linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.88) 100%);
     }
 
     header.site-header .wrap{
@@ -149,12 +149,24 @@
 
     .pad{padding:18px}
 
+    .hero-image-wrap{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:18px;
+      background:#050505;
+      border-bottom:1px solid var(--line);
+    }
+
     .hero-image{
       width:100%;
+      max-width:760px;
+      height:auto;
       display:block;
-      object-fit:cover;
-      max-height:540px;
-      border-bottom:1px solid var(--line);
+      object-fit:contain;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#000;
     }
 
     .headline{
@@ -325,6 +337,8 @@
       .feature-grid{grid-template-columns:1fr}
       .top-actions{width:100%; justify-content:flex-start}
       .brand img{width:48px; height:48px}
+      .hero-image-wrap{padding:12px}
+      .hero-image{max-width:100%}
     }
 
     @media (max-width: 520px){
@@ -341,6 +355,7 @@
         height:56px;
         border-radius:18px;
       }
+      .hero-image-wrap{padding:10px}
     }
   </style>
 
@@ -410,14 +425,16 @@
   <main class="wrap">
 
     <section class="card">
-      <img
-        class="hero-image"
-        src="barbearia-raphael-malfara-monte-aprazivel.jpg"
-        alt="Raphael Malfara na Barbearia Raphael Malfara em Monte Aprazível"
-        loading="eager"
-        width="1600"
-        height="900"
-      />
+      <div class="hero-image-wrap">
+        <img
+          class="hero-image"
+          src="barbearia-raphael-malfara-monte-aprazivel.jpg"
+          alt="Raphael Malfara na Barbearia Raphael Malfara em Monte Aprazível"
+          loading="eager"
+          width="1600"
+          height="900"
+        />
+      </div>
 
       <div class="pad">
         <h2 class="headline">Quem Somos</h2>
