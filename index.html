@@ -299,6 +299,30 @@
       border-radius: var(--radius);
     }
 
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:12px;
+    }
+    .feature{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(255,255,255,.04);
+    }
+    .feature .t{
+      margin:0 0 6px;
+      font-weight:650;
+      font-size:14px;
+      color:var(--text);
+    }
+    .feature .d{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.5;
+    }
+
     .wa-float{
       position:fixed;
       right:16px;
@@ -391,6 +415,7 @@
       .headline{font-size:30px}
       .services{grid-template-columns:1fr}
       .gallery{grid-template-columns: repeat(2, 1fr)}
+      .feature-grid{grid-template-columns:1fr}
       .top-actions{width:100%; justify-content:flex-start}
       .brand img{width:48px; height:48px}
     }
@@ -557,6 +582,7 @@
       </div>
 
       <div class="top-actions">
+        <a class="btn outline" href="/" title="Página inicial da Barbearia Raphael Malfara">Início</a>
         <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
         <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Fazer reserva</a>
         <a class="btn outline" href="galeria.html" title="Ver galeria de fotos da Barbearia Raphael Malfara">Galeria</a>
@@ -573,7 +599,7 @@
           <h2 class="headline">Corte masculino e barba com atendimento exclusivo</h2>
           <p class="subheadline">Barbeiro e cabeleireiro masculino em Monte Aprazível/SP</p>
           <p class="text">
-            Na Barbearia Raphael Malfara, em Monte Aprazível/SP, você encontra atendimento caprichado, ambiente confortável e resultado que valoriza o seu estilo. Seja para um visual clássico, um degradê bem feito ou uma barba alinhada, cada detalhe é pensado para você sair com presença e confiança. Faça sua reserva online e garanta seu horário.
+            Na Barbearia Raphael Malfara, em Monte Aprazível/SP, você encontra atendimento com hora marcada, acabamento caprichado e uma experiência pensada para valorizar seu estilo. Seja para um visual clássico, um degradê moderno ou uma barba alinhada, cada serviço é realizado com técnica, atenção aos detalhes e foco em resultado. Faça sua reserva online e garanta seu horário com mais conforto, pontualidade e qualidade profissional.
           </p>
 
           <div class="line"></div>
@@ -624,9 +650,47 @@
       </div>
     </section>
 
+    <section class="card" id="Diferenciais">
+      <div class="pad">
+        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Diferenciais da Barbearia Raphael Malfara</h2>
+        <p class="text">
+          Experiência, tradição e atendimento personalizado para quem procura mais do que um corte de cabelo. Aqui, cada cliente recebe atenção individual, acabamento profissional e uma experiência de barbearia feita com técnica e respeito ao seu estilo.
+        </p>
+
+        <div class="line"></div>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <p class="t">Mais de 20 anos de experiência</p>
+            <p class="d">Trajetória sólida na barbearia masculina, com técnica refinada e atendimento de alto nível.</p>
+          </div>
+
+          <div class="feature">
+            <p class="t">Mais de 200 jogadores atendidos</p>
+            <p class="d">Histórico com atletas profissionais, artistas e clientes que valorizam confiança e qualidade.</p>
+          </div>
+
+          <div class="feature">
+            <p class="t">Atendimento com hora marcada</p>
+            <p class="d">Mais conforto, pontualidade e cuidado em cada serviço realizado na barbearia.</p>
+          </div>
+
+          <div class="feature">
+            <p class="t">Barboterapia e toalha quente</p>
+            <p class="d">Uma experiência clássica para quem busca mais do que um simples barbear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="card" id="Servicos">
       <div class="pad">
         <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Serviços e valores</h2>
+        <p class="text">
+          Serviços realizados com atendimento individual, horário reservado e acabamento profissional para valorizar o seu visual em cada detalhe.
+        </p>
+
+        <div class="line"></div>
 
         <div class="services" role="list">
           <div class="service" role="listitem">
@@ -732,6 +796,34 @@
       </div>
     </section>
 
+    <section class="card" id="Escolher">
+      <div class="pad">
+        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Por que escolher a Barbearia Raphael Malfara</h2>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <p class="t">Atendimento personalizado</p>
+            <p class="d">Cada cliente é atendido com foco no estilo, no caimento do corte e no acabamento ideal.</p>
+          </div>
+
+          <div class="feature">
+            <p class="t">Experiência real na profissão</p>
+            <p class="d">Mais de duas décadas dedicadas à barbearia masculina, com técnica e consistência no resultado.</p>
+          </div>
+
+          <div class="feature">
+            <p class="t">Ambiente confortável</p>
+            <p class="d">Um espaço pensado para oferecer praticidade, confiança e uma boa experiência em cada visita.</p>
+          </div>
+
+          <div class="feature">
+            <p class="t">Referência em Monte Aprazível</p>
+            <p class="d">Barbearia local com atendimento profissional para quem busca qualidade de verdade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="card" id="Jogadores">
       <div class="pad">
         <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Trajetória com jogadores de futebol e clientes especiais</h2>
@@ -791,9 +883,9 @@
   </main>
 
   <a class="wa-float"
-     href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Preciso+de+ajuda+com+minha+reserva+na+Barbearia+Raphael+Malfara."
+     href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara."
      target="_blank" rel="noopener"
-     aria-label="WhatsApp da Barbearia Raphael Malfara para suporte"
+     aria-label="WhatsApp da Barbearia Raphael Malfara para agendamento"
      title="WhatsApp da Barbearia Raphael Malfara">
     <span class="wa-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none">
@@ -803,7 +895,7 @@
     </span>
     <span class="wa-text">
       <strong>WhatsApp</strong>
-      <span>Somente para suporte</span>
+      <span>Agende seu horário</span>
     </span>
   </a>
 
