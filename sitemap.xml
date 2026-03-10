@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
- xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
- xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- Página Inicial -->
   <url>
     <loc>https://barbeariaraphaelmalfara.com.br/</loc>
     <lastmod>2026-03-10</lastmod>
@@ -10,24 +11,43 @@
     <image:image>
       <image:loc>https://barbeariaraphaelmalfara.com.br/logo.png</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://barbeariaraphaelmalfara.com.br/banner.png</image:loc>
-    </image:image>
   </url>
 
+  <!-- Quem Somos -->
   <url>
-    <loc>https://barbeariaraphaelmalfara.com.br/quem-somos.html</loc>
+    <loc>https://barbeariaraphaelmalfara.com.br/quem-somos</loc>
     <lastmod>2026-03-10</lastmod>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://barbeariaraphaelmalfara.com.br/barbearia-raphael-malfara-monte-aprazivel.jpg</image:loc>
     </image:image>
   </url>
 
+  <!-- Corte Masculino -->
+  <url>
+    <loc>https://barbeariaraphaelmalfara.com.br/corte-masculino-monte-aprazivel.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://barbeariaraphaelmalfara.com.br/corte-masculino-barbearia-raphael-malfara-monte-aprazivel.jpeg</image:loc>
+    </image:image>
+  </url>
+
+  <!-- Barba -->
+  <url>
+    <loc>https://barbeariaraphaelmalfara.com.br/barbeiro-monte-aprazivel.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://barbeariaraphaelmalfara.com.br/corte-de-barba-barbeiro-raphael-malfara-monte-aprazivel.jpeg</image:loc>
+    </image:image>
+  </url>
+
+  <!-- Galeria -->
   <url>
     <loc>https://barbeariaraphaelmalfara.com.br/galeria.html</loc>
     <lastmod>2026-03-10</lastmod>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
 
     <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto01.png</image:loc></image:image>
     <image:image><image:loc>https://barbeariaraphaelmalfara.com.br/foto02.png</image:loc></image:image>
