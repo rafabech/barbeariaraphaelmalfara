@@ -15,6 +15,9 @@
   <link rel="apple-touch-icon" href="/logo.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
+  <link rel="preload" as="image" href="barbearia-raphael-malfara-monte-aprazivel.webp" media="(min-width: 981px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/logo.png" media="(max-width: 980px)" fetchpriority="high" />
+
   <meta name="author" content="Barbearia Raphael Malfara" />
   <meta name="format-detection" content="telephone=yes" />
   <meta name="geo.region" content="BR-SP" />
@@ -53,14 +56,20 @@
 
     *{box-sizing:border-box}
     html,body{height:100%}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
       background:var(--bg);
       color:var(--text);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
       line-height:1.5;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
+    }
+
+    img{
+      max-width:100%;
+      height:auto;
     }
 
     a{color:inherit; text-decoration:none}
@@ -164,7 +173,6 @@
     .hero-image{
       width:100%;
       max-width:760px;
-      height:auto;
       display:block;
       object-fit:contain;
       border-radius:14px;
@@ -273,6 +281,11 @@
       margin-top:18px;
     }
 
+    .defer-section{
+      content-visibility:auto;
+      contain-intrinsic-size: 900px;
+    }
+
     .wa-float{
       position:fixed;
       right:16px;
@@ -340,11 +353,37 @@
       .feature-grid{grid-template-columns:1fr}
       .top-actions{width:100%; justify-content:flex-start}
       .brand img{width:48px; height:48px}
-      .hero-image-wrap{padding:12px}
-      .hero-image{max-width:100%}
+      .hero-image-wrap{
+        padding:10px;
+        background:#030303;
+      }
+      .hero-image{
+        max-width:260px;
+        width:100%;
+        border-radius:12px;
+      }
+      .card{
+        box-shadow:none;
+      }
+      .feature,
+      .row{
+        background:rgba(255,255,255,.03);
+      }
     }
 
     @media (max-width: 520px){
+      .wrap{padding:14px}
+      header.site-header .wrap{padding:16px 14px 14px}
+      .btn{
+        padding:10px 12px;
+        font-size:13px;
+      }
+      .pad{padding:14px}
+      .headline{font-size:28px}
+      .subheadline{font-size:17px}
+      .text{font-size:15px}
+      .row{padding:9px 10px}
+      .feature{padding:12px}
       .wa-text{display:none}
       .wa-float{
         width:56px;
@@ -352,13 +391,16 @@
         padding:0;
         border-radius:18px;
         justify-content:center;
+        backdrop-filter:none;
+        box-shadow:none;
       }
       .wa-icon{
         width:56px;
         height:56px;
         border-radius:18px;
       }
-      .hero-image-wrap{padding:10px}
+      .hero-image-wrap{padding:8px}
+      .hero-image{max-width:220px}
     }
   </style>
 
@@ -431,7 +473,7 @@
   <header class="site-header">
     <div class="wrap">
       <div class="brand">
-        <img src="logo.png" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" width="56" height="56" />
+        <img src="logo.png" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" fetchpriority="high" decoding="async" width="56" height="56" />
         <div>
           <h1 class="name">Barbearia Raphael Malfara</h1>
           <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • <a class="tel-link" href="tel:+5517991042868" title="Ligar para a Barbearia Raphael Malfara">(17) 99104-2868</a></p>
@@ -454,14 +496,19 @@
 
     <section class="card">
       <div class="hero-image-wrap">
-        <img
-          class="hero-image"
-          src="barbearia-raphael-malfara-monte-aprazivel.webp"
-          alt="Raphael Malfara na Barbearia Raphael Malfara em Monte Aprazível"
-          loading="eager"
-          width="1600"
-          height="900"
-        />
+        <picture>
+          <source media="(max-width: 980px)" srcset="/logo.png" type="image/png" />
+          <img
+            class="hero-image"
+            src="barbearia-raphael-malfara-monte-aprazivel.webp"
+            alt="Raphael Malfara na Barbearia Raphael Malfara em Monte Aprazível"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            width="1600"
+            height="900"
+          />
+        </picture>
       </div>
 
       <div class="pad">
@@ -575,7 +622,7 @@
       </div>
     </section>
 
-    <section class="card">
+    <section class="card defer-section">
       <div class="pad">
         <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Barbeiro em Monte Aprazível com história, técnica e tradição</h2>
         <p class="text">
@@ -590,7 +637,7 @@
       </div>
     </section>
 
-    <section class="card">
+    <section class="card defer-section">
       <div class="pad">
         <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Contato</h2>
 
@@ -623,7 +670,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="defer-section">
       <div class="wrap" style="padding:0">
         <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
           <div>© <span id="Y"></span> Barbearia Raphael Malfara • Monte Aprazível/SP</div>
