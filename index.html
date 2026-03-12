@@ -12,10 +12,10 @@
 
   <meta name="google-site-verification" content="8sYjVVFFOJNDKsdXwHr231dWRQnVOWMwrFbKqkIejOQ" />
 
-  <link rel="icon" href="/logo.png" type="image/png" sizes="48x48" />
-  <link rel="icon" href="/logo.png" type="image/png" sizes="192x192" />
-  <link rel="apple-touch-icon" href="/logo.png" />
-  <link rel="shortcut icon" href="/logo.png" type="image/png" />
+  <link rel="icon" href="/logo.webp" type="image/webp" sizes="48x48" />
+  <link rel="icon" href="/logo.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/logo.webp" />
+  <link rel="shortcut icon" href="/logo.webp" type="image/webp" />
   <link rel="manifest" href="/site.webmanifest" />
 
   <meta name="author" content="Barbearia Raphael Malfara" />
@@ -31,16 +31,16 @@
   <meta property="og:title" content="Barbeiro em Monte Aprazível | Corte Masculino e Barba | Barbearia Raphael Malfara" />
   <meta property="og:description" content="Corte masculino, barba e atendimento com hora marcada em Monte Aprazível/SP. Rua Osvaldo Aranha, 772." />
   <meta property="og:url" content="https://www.barbeariaraphaelmalfara.com.br/" />
-  <meta property="og:image" content="https://www.barbeariaraphaelmalfara.com.br/og.jpg" />
-  <meta property="og:image:secure_url" content="https://www.barbeariaraphaelmalfara.com.br/og.jpg" />
-  <meta property="og:image:width" content="1200" />
+  <meta property="og:image" content="https://www.barbeariaraphaelmalfara.com.br/og.webp" />
+  <meta property="og:image:secure_url" content="https://www.barbeariaraphaelmalfara.com.br/og.webp" />
+  <meta property="og:image:width" content="1153" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Barbearia Raphael Malfara em Monte Aprazível" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Barbeiro em Monte Aprazível | Corte Masculino e Barba | Barbearia Raphael Malfara" />
   <meta name="twitter:description" content="Corte masculino, barba e atendimento com hora marcada em Monte Aprazível/SP." />
-  <meta name="twitter:image" content="https://www.barbeariaraphaelmalfara.com.br/og.jpg" />
+  <meta name="twitter:image" content="https://www.barbeariaraphaelmalfara.com.br/og.webp" />
 
   <style>
     :root{
@@ -49,7 +49,6 @@
       --muted:rgba(255,255,255,.78);
       --line:rgba(255,255,255,.14);
       --gold:#f6c453;
-      --gold2:#ffd980;
       --ig:#E1306C;
       --wa:#25D366;
       --radius:18px;
@@ -75,36 +74,35 @@
 
     header.site-header{
       border-bottom:1px solid var(--line);
+      background: url("banner.webp") center/cover no-repeat;
       position:relative;
-      overflow:hidden;
-      background:#000;
-    }
-    .hero-media{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      opacity:.98;
+      min-height: 340px;
+      display:flex;
+      align-items:flex-end;
     }
     header.site-header::before{
       content:"";
       position:absolute;
       inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,.20) 0%, rgba(0,0,0,.55) 38%, rgba(0,0,0,.92) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,.20) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.92) 100%);
       pointer-events:none;
-      z-index:1;
     }
     header.site-header .wrap{
       position:relative;
-      z-index:2;
       width:100%;
-      min-height:420px;
-      padding:26px 20px 28px;
+      padding:22px 20px 24px;
       display:flex;
       flex-direction:column;
-      justify-content:space-between;
       gap:18px;
+      z-index:1;
+    }
+
+    .banner-mobile{
+      display:none;
+      width:100%;
+      height:190px;
+      background: url("banner.webp") center/cover no-repeat;
+      border-bottom:1px solid var(--line);
     }
 
     .topbar{
@@ -122,8 +120,8 @@
       min-width:260px;
     }
     .brand img{
-      width:60px;
-      height:60px;
+      width:56px;
+      height:56px;
       border-radius:14px;
       border:1px solid var(--line);
       background: rgba(255,255,255,.06);
@@ -131,7 +129,7 @@
       flex:0 0 auto;
     }
     .name{
-      font-size:24px;
+      font-size:22px;
       font-weight:700;
       letter-spacing:.1px;
       margin:0;
@@ -163,72 +161,52 @@
       font-size:14px;
       font-weight:650;
       white-space:nowrap;
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      transition: transform .12s ease;
     }
     .btn:hover{transform: translateY(-1px)}
     .btn:active{transform: translateY(0px)}
     .btn.gold{
-      border-color: rgba(246,196,83,.45);
-      background: linear-gradient(135deg, rgba(246,196,83,.18), rgba(246,196,83,.10));
-      box-shadow: 0 10px 30px rgba(246,196,83,.14);
-    }
-    .btn.gold.strong{
-      background: linear-gradient(135deg, rgba(246,196,83,.28), rgba(246,196,83,.14));
-      border-color: rgba(246,196,83,.62);
-      color:#fff;
+      border-color: rgba(246,196,83,.35);
+      background: rgba(246,196,83,.12);
     }
     .btn.ig{border-color: rgba(225,48,108,.45); background: rgba(225,48,108,.12);}
     .btn.wa{border-color: rgba(37,211,102,.45); background: rgba(37,211,102,.12);}
     .btn.outline{border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.04);}
 
-    .hero-copy{
-      max-width:760px;
-      display:grid;
-      gap:14px;
+    .hero-box{
+      max-width:680px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.42);
+      backdrop-filter: blur(4px);
+      border-radius:20px;
+      padding:20px;
+      box-shadow: var(--shadow);
     }
     .hero-kicker{
-      color:var(--gold2);
-      font-size:14px;
+      margin:0 0 8px;
+      color:var(--gold);
+      font-size:13px;
       font-weight:700;
-      letter-spacing:.2px;
       text-transform:uppercase;
+      letter-spacing:.3px;
     }
     .hero-title{
-      font-size:42px;
-      line-height:1.05;
-      letter-spacing:-.6px;
+      margin:0 0 10px;
+      font-size:32px;
+      line-height:1.08;
+      letter-spacing:-.4px;
       font-weight:750;
-      margin:0;
-      max-width:900px;
     }
     .hero-text{
-      font-size:17px;
-      color:rgba(255,255,255,.86);
       margin:0;
-      max-width:760px;
+      color:rgba(255,255,255,.84);
+      font-size:15px;
     }
-    .hero-cta{
+    .hero-actions{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
-      align-items:center;
-    }
-    .hero-proof{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:2px;
-    }
-    .chip{
-      display:inline-flex;
-      align-items:center;
-      padding:9px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      font-size:13px;
-      font-weight:650;
+      margin-top:14px;
     }
 
     .grid{
@@ -324,22 +302,22 @@
       gap:12px;
     }
     .service{
-      padding:16px;
+      padding:14px;
       border:1px solid var(--line);
       border-radius: var(--radius);
       background: rgba(255,255,255,.04);
     }
     .service .t{
       margin:0 0 6px;
-      font-weight:700;
-      font-size:15px;
+      font-weight:650;
+      font-size:14px;
       color: var(--text);
     }
     .price{
       margin:0;
-      font-size:16px;
+      font-size:14px;
       color: var(--gold);
-      font-weight:700;
+      font-weight:650;
     }
     .service small{
       display:block;
@@ -390,7 +368,7 @@
     }
     .feature .t{
       margin:0 0 6px;
-      font-weight:700;
+      font-weight:650;
       font-size:14px;
       color:var(--text);
     }
@@ -492,22 +470,36 @@
     }
 
     @media (max-width: 980px){
-      header.site-header .wrap{
-        min-height:unset;
-        padding:18px 20px 22px;
+      .banner-mobile{display:block;}
+
+      header.site-header{
+        background:none;
+        min-height:auto;
+        display:block;
       }
-      .topbar{
+      header.site-header::before{display:none;}
+      header.site-header .wrap{
+        padding:16px 20px 16px;
         align-items:flex-start;
         justify-content:flex-start;
+        gap:12px;
       }
-      .hero-title{font-size:34px}
+
+      .hero-box{
+        background: rgba(255,255,255,.04);
+        backdrop-filter:none;
+        border:1px solid var(--line);
+        box-shadow:none;
+      }
+
       .grid{grid-template-columns:1fr}
+      .hero-title{font-size:28px}
       .headline{font-size:30px}
       .services{grid-template-columns:1fr}
       .gallery{grid-template-columns: repeat(2, 1fr)}
       .feature-grid{grid-template-columns:1fr}
       .top-actions{width:100%; justify-content:flex-start}
-      .brand img{width:50px; height:50px}
+      .brand img{width:48px; height:48px}
     }
   </style>
 
@@ -519,10 +511,10 @@
     "name":"Barbearia Raphael Malfara",
     "url":"https://www.barbeariaraphaelmalfara.com.br/",
     "image":[
-      "https://www.barbeariaraphaelmalfara.com.br/og.jpg",
-      "https://www.barbeariaraphaelmalfara.com.br/logo.png"
+      "https://www.barbeariaraphaelmalfara.com.br/og.webp",
+      "https://www.barbeariaraphaelmalfara.com.br/logo.webp"
     ],
-    "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
+    "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.webp",
     "telephone":"+55 17 99104-2868",
     "priceRange":"$$",
     "description":"Barbearia em Monte Aprazível/SP com corte masculino, barba, degradê e reserva online.",
@@ -609,8 +601,8 @@
     "@id":"https://www.barbeariaraphaelmalfara.com.br/#organization",
     "name":"Barbearia Raphael Malfara",
     "url":"https://www.barbeariaraphaelmalfara.com.br/",
-    "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
-    "image":"https://www.barbeariaraphaelmalfara.com.br/og.jpg",
+    "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.webp",
+    "image":"https://www.barbeariaraphaelmalfara.com.br/og.webp",
     "sameAs":[
       "https://www.instagram.com/raphaelmalfara/"
     ]
@@ -635,8 +627,8 @@
     "@context":"https://schema.org",
     "@type":"ImageObject",
     "@id":"https://www.barbeariaraphaelmalfara.com.br/#primaryimage",
-    "contentUrl":"https://www.barbeariaraphaelmalfara.com.br/og.jpg",
-    "url":"https://www.barbeariaraphaelmalfara.com.br/og.jpg",
+    "contentUrl":"https://www.barbeariaraphaelmalfara.com.br/og.webp",
+    "url":"https://www.barbeariaraphaelmalfara.com.br/og.webp",
     "caption":"Barbearia Raphael Malfara em Monte Aprazível",
     "representativeOfPage":true
   }
@@ -695,12 +687,12 @@
 <body>
 
   <header class="site-header" id="Inicio">
-    <img class="hero-media" src="banner.png" alt="Interior e identidade visual da Barbearia Raphael Malfara em Monte Aprazível" width="1600" height="900" fetchpriority="high" />
+    <div class="banner-mobile" aria-hidden="true"></div>
 
     <div class="wrap">
       <div class="topbar">
         <div class="brand">
-          <img src="logo.png" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" width="60" height="60" />
+          <img src="logo.webp" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" width="56" height="56" />
           <div>
             <h1 class="name">Barbeiro em Monte Aprazível | Barbearia Raphael Malfara</h1>
             <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • <a class="tel-link" href="tel:+5517991042868" title="Ligar para a Barbearia Raphael Malfara">(17) 99104-2868</a></p>
@@ -714,27 +706,21 @@
           <a class="btn outline" href="barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível">Barba</a>
           <a class="btn outline" href="galeria.html" title="Ver galeria de fotos da Barbearia Raphael Malfara">Galeria</a>
           <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Falar no WhatsApp da Barbearia Raphael Malfara">WhatsApp</a>
-          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Agendar horário</a>
+          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Agendar horário</a>
           <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram da Barbearia Raphael Malfara">Instagram</a>
         </div>
       </div>
 
-      <div class="hero-copy">
-        <div class="hero-kicker">Corte masculino, barba e atendimento com hora marcada</div>
-        <p class="hero-title"></p>
+      <div class="hero-box">
+        <p class="hero-kicker">Corte masculino, barba e atendimento com hora marcada</p>
+        <h2 class="hero-title">Barbearia em Monte Aprazível para quem procura corte bem feito, barba alinhada e atendimento profissional.</h2>
         <p class="hero-text">
-          A Barbearia Raphael Malfara oferece corte masculino, barba, degradê e combo com atendimento individual, pontualidade e acabamento caprichado. Faça sua reserva online ou fale direto pelo WhatsApp.
+          Atendimento individual, acabamento caprichado e mais conforto para quem quer reservar seu horário com praticidade.
         </p>
 
-        <div class="hero-cta">
-          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Reservar agora</a>
-          <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Chamar no WhatsApp para agendar">Chamar no WhatsApp</a>
-        </div>
-
-        <div class="hero-proof">
-          <span class="chip">Mais de 20 anos de experiência</span>
-          <span class="chip">Mais de 200 jogadores profissionais atendidos</span>
-          <span class="chip">Atendimento com horário marcado</span>
+        <div class="hero-actions">
+          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário agora">Reservar agora</a>
+          <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Chamar no WhatsApp">Chamar no WhatsApp</a>
         </div>
       </div>
     </div>
@@ -773,7 +759,7 @@
           <div class="line"></div>
 
           <div class="gallery-actions">
-            <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Fazer reserva</a>
+            <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Fazer reserva</a>
             <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Conheça nossa história</a>
           </div>
         </div>
@@ -795,7 +781,7 @@
 
           <div class="line"></div>
 
-          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Agendar horário</a>
+          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Agendar horário</a>
         </div>
       </div>
     </section>
@@ -870,7 +856,7 @@
 
         <div class="cta-band">
           <p>Escolha seu serviço e reserve agora seu horário.</p>
-          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Agendar agora</a>
+          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Agendar agora</a>
         </div>
       </div>
     </section>
@@ -880,15 +866,15 @@
         <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Galeria de fotos</h2>
 
         <div class="gallery">
-          <div class="ph"><img src="foto01.png" alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" width="300" height="300"></div>
-          <div class="ph"><img src="foto02.png" alt="Barbeiro em Monte Aprazível realizando corte masculino" loading="lazy" width="300" height="300"></div>
-          <div class="ph"><img src="foto03.png" alt="Serviço de barba na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" width="300" height="300"></div>
-          <div class="ph"><img src="foto04.png" alt="Corte degradê masculino em Monte Aprazível SP" loading="lazy" width="300" height="300"></div>
+          <div class="ph"><img src="foto01.webp" alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" width="300" height="300"></div>
+          <div class="ph"><img src="foto02.webp" alt="Barbeiro em Monte Aprazível realizando corte masculino" loading="lazy" width="300" height="300"></div>
+          <div class="ph"><img src="foto03.webp" alt="Serviço de barba na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" width="300" height="300"></div>
+          <div class="ph"><img src="foto04.webp" alt="Corte degradê masculino em Monte Aprazível SP" loading="lazy" width="300" height="300"></div>
         </div>
 
         <div class="cta-band">
           <p>Gostou dos cortes e do acabamento? Reserve seu horário.</p>
-          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário agora">Reservar agora</a>
+          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário agora">Reservar agora</a>
         </div>
 
         <div class="gallery-actions">
@@ -921,7 +907,7 @@
           <div class="line"></div>
 
           <div class="top-actions" style="justify-content:flex-start">
-            <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Agendar horário</a>
+            <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Agendar horário</a>
             <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Falar no WhatsApp">WhatsApp</a>
             <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
             <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram oficial da Barbearia Raphael Malfara">Instagram</a>
