@@ -5,22 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#000000" />
 
-  <title>Barbeiro em Monte Aprazível | Barbearia Raphael Malfara | Corte Masculino e Barba | (17) 99104-2868</title>
+  <title>Barbeiro em Monte Aprazível | Corte Masculino e Barba | Barbearia Raphael Malfara</title>
   <meta name="description" content="Barbearia Raphael Malfara em Monte Aprazível/SP. Corte masculino, barba, degradê e combo com reserva online. Rua Osvaldo Aranha, 772. Telefone: (17) 99104-2868." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://www.barbeariaraphaelmalfara.com.br/" />
 
-  <!-- Google Search Console -->
   <meta name="google-site-verification" content="8sYjVVFFOJNDKsdXwHr231dWRQnVOWMwrFbKqkIejOQ" />
 
-  <!-- Favicon + Manifest -->
   <link rel="icon" href="/logo.png" type="image/png" sizes="48x48" />
-  <link rel="shortcut icon" href="/logo.png" type="image/png" />
+  <link rel="icon" href="/logo.png" type="image/png" sizes="192x192" />
   <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="shortcut icon" href="/logo.png" type="image/png" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- SEO -->
-  <meta name="keywords" content="barbeiro Monte Aprazível, barbearia Monte Aprazível, cabeleireiro masculino Monte Aprazível, corte masculino Monte Aprazível, barba Monte Aprazível, degradê Monte Aprazível, barbearia Raphael Malfara, barbeiro perto de mim, cabeleireiro perto de mim, barbeiro profissional, galeria de cortes masculinos, quem somos Barbearia Raphael Malfara" />
   <meta name="author" content="Barbearia Raphael Malfara" />
   <meta name="format-detection" content="telephone=yes" />
   <meta name="geo.region" content="BR-SP" />
@@ -28,16 +25,22 @@
   <meta name="geo.position" content="-20.7739;-49.7144" />
   <meta name="ICBM" content="-20.7739,-49.7144" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Barbearia Raphael Malfara" />
-  <meta property="og:title" content="Barbeiro em Monte Aprazível | Barbearia Raphael Malfara | (17) 99104-2868" />
-  <meta property="og:description" content="Corte masculino, barba e reserva online em Monte Aprazível/SP. Rua Osvaldo Aranha, 772." />
+  <meta property="og:title" content="Barbeiro em Monte Aprazível | Corte Masculino e Barba | Barbearia Raphael Malfara" />
+  <meta property="og:description" content="Corte masculino, barba e atendimento com hora marcada em Monte Aprazível/SP. Rua Osvaldo Aranha, 772." />
   <meta property="og:url" content="https://www.barbeariaraphaelmalfara.com.br/" />
   <meta property="og:image" content="https://www.barbeariaraphaelmalfara.com.br/og.jpg" />
+  <meta property="og:image:secure_url" content="https://www.barbeariaraphaelmalfara.com.br/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Barbearia Raphael Malfara em Monte Aprazível" />
+
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Barbeiro em Monte Aprazível | Corte Masculino e Barba | Barbearia Raphael Malfara" />
+  <meta name="twitter:description" content="Corte masculino, barba e atendimento com hora marcada em Monte Aprazível/SP." />
+  <meta name="twitter:image" content="https://www.barbeariaraphaelmalfara.com.br/og.jpg" />
 
   <style>
     :root{
@@ -46,6 +49,7 @@
       --muted:rgba(255,255,255,.78);
       --line:rgba(255,255,255,.14);
       --gold:#f6c453;
+      --gold2:#ffd980;
       --ig:#E1306C;
       --wa:#25D366;
       --radius:18px;
@@ -71,36 +75,44 @@
 
     header.site-header{
       border-bottom:1px solid var(--line);
-      background: url("banner.png") center/cover no-repeat;
       position:relative;
-      min-height: 320px;
-      display:flex;
-      align-items:flex-end;
+      overflow:hidden;
+      background:#000;
+    }
+    .hero-media{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity:.98;
     }
     header.site-header::before{
       content:"";
       position:absolute;
       inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.88) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,.20) 0%, rgba(0,0,0,.55) 38%, rgba(0,0,0,.92) 100%);
       pointer-events:none;
+      z-index:1;
     }
     header.site-header .wrap{
       position:relative;
+      z-index:2;
       width:100%;
-      padding:26px 20px 22px;
+      min-height:420px;
+      padding:26px 20px 28px;
       display:flex;
-      align-items:flex-end;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:18px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:flex-start;
       justify-content:space-between;
       gap:16px;
       flex-wrap:wrap;
-    }
-
-    .banner-mobile{
-      display:none;
-      width:100%;
-      height:190px;
-      background: url("banner.png") center/cover no-repeat;
-      border-bottom:1px solid var(--line);
     }
 
     .brand{
@@ -110,8 +122,8 @@
       min-width:260px;
     }
     .brand img{
-      width:56px;
-      height:56px;
+      width:60px;
+      height:60px;
       border-radius:14px;
       border:1px solid var(--line);
       background: rgba(255,255,255,.06);
@@ -119,9 +131,9 @@
       flex:0 0 auto;
     }
     .name{
-      font-size:22px;
-      font-weight:650;
-      letter-spacing:.2px;
+      font-size:24px;
+      font-weight:700;
+      letter-spacing:.1px;
       margin:0;
     }
     .sub{
@@ -151,13 +163,73 @@
       font-size:14px;
       font-weight:650;
       white-space:nowrap;
-      transition: transform .12s ease;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
     }
     .btn:hover{transform: translateY(-1px)}
     .btn:active{transform: translateY(0px)}
-    .btn.gold{border-color: rgba(246,196,83,.35); background: rgba(246,196,83,.10);}
+    .btn.gold{
+      border-color: rgba(246,196,83,.45);
+      background: linear-gradient(135deg, rgba(246,196,83,.18), rgba(246,196,83,.10));
+      box-shadow: 0 10px 30px rgba(246,196,83,.14);
+    }
+    .btn.gold.strong{
+      background: linear-gradient(135deg, rgba(246,196,83,.28), rgba(246,196,83,.14));
+      border-color: rgba(246,196,83,.62);
+      color:#fff;
+    }
     .btn.ig{border-color: rgba(225,48,108,.45); background: rgba(225,48,108,.12);}
+    .btn.wa{border-color: rgba(37,211,102,.45); background: rgba(37,211,102,.12);}
     .btn.outline{border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.04);}
+
+    .hero-copy{
+      max-width:760px;
+      display:grid;
+      gap:14px;
+    }
+    .hero-kicker{
+      color:var(--gold2);
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:.2px;
+      text-transform:uppercase;
+    }
+    .hero-title{
+      font-size:42px;
+      line-height:1.05;
+      letter-spacing:-.6px;
+      font-weight:750;
+      margin:0;
+      max-width:900px;
+    }
+    .hero-text{
+      font-size:17px;
+      color:rgba(255,255,255,.86);
+      margin:0;
+      max-width:760px;
+    }
+    .hero-cta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .hero-proof{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:2px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      padding:9px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-size:13px;
+      font-weight:650;
+    }
 
     .grid{
       display:grid;
@@ -252,22 +324,28 @@
       gap:12px;
     }
     .service{
-      padding:14px;
+      padding:16px;
       border:1px solid var(--line);
       border-radius: var(--radius);
       background: rgba(255,255,255,.04);
     }
     .service .t{
       margin:0 0 6px;
-      font-weight:650;
-      font-size:14px;
+      font-weight:700;
+      font-size:15px;
       color: var(--text);
     }
     .price{
       margin:0;
-      font-size:14px;
+      font-size:16px;
       color: var(--gold);
-      font-weight:650;
+      font-weight:700;
+    }
+    .service small{
+      display:block;
+      margin-top:6px;
+      color:var(--muted);
+      font-size:12px;
     }
 
     .gallery{
@@ -312,7 +390,7 @@
     }
     .feature .t{
       margin:0 0 6px;
-      font-weight:650;
+      font-weight:700;
       font-size:14px;
       color:var(--text);
     }
@@ -321,6 +399,24 @@
       color:var(--muted);
       font-size:13px;
       line-height:1.5;
+    }
+
+    .cta-band{
+      margin-top:14px;
+      padding:16px;
+      border:1px solid rgba(246,196,83,.30);
+      border-radius:16px;
+      background: linear-gradient(135deg, rgba(246,196,83,.10), rgba(255,255,255,.04));
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .cta-band p{
+      margin:0;
+      color:var(--text);
+      font-weight:650;
     }
 
     .wa-float{
@@ -396,28 +492,22 @@
     }
 
     @media (max-width: 980px){
-      .banner-mobile{display:block;}
-
-      header.site-header{
-        background:none;
-        min-height:auto;
-        display:block;
-      }
-      header.site-header::before{display:none;}
       header.site-header .wrap{
-        padding:16px 20px 16px;
+        min-height:unset;
+        padding:18px 20px 22px;
+      }
+      .topbar{
         align-items:flex-start;
         justify-content:flex-start;
-        gap:12px;
       }
-
+      .hero-title{font-size:34px}
       .grid{grid-template-columns:1fr}
       .headline{font-size:30px}
       .services{grid-template-columns:1fr}
       .gallery{grid-template-columns: repeat(2, 1fr)}
       .feature-grid{grid-template-columns:1fr}
       .top-actions{width:100%; justify-content:flex-start}
-      .brand img{width:48px; height:48px}
+      .brand img{width:50px; height:50px}
     }
   </style>
 
@@ -428,7 +518,10 @@
     "@id":"https://www.barbeariaraphaelmalfara.com.br/#barbershop",
     "name":"Barbearia Raphael Malfara",
     "url":"https://www.barbeariaraphaelmalfara.com.br/",
-    "image":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
+    "image":[
+      "https://www.barbeariaraphaelmalfara.com.br/og.jpg",
+      "https://www.barbeariaraphaelmalfara.com.br/logo.png"
+    ],
     "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
     "telephone":"+55 17 99104-2868",
     "priceRange":"$$",
@@ -454,15 +547,6 @@
       "@type":"City",
       "name":"Monte Aprazível"
     },
-    "knowsAbout":[
-      "barbeiro",
-      "barbearia",
-      "corte masculino",
-      "barba",
-      "degradê",
-      "cabeleireiro masculino"
-    ],
-    "hasMap":"https://www.google.com/maps?q=R.%20Osvaldo%20Aranha,%20772%20-%20Monte%20Apraz%C3%ADvel%20-%20SP%2015150-000",
     "sameAs":[
       "https://www.instagram.com/raphaelmalfara/"
     ],
@@ -526,10 +610,35 @@
     "name":"Barbearia Raphael Malfara",
     "url":"https://www.barbeariaraphaelmalfara.com.br/",
     "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
-    "image":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
+    "image":"https://www.barbeariaraphaelmalfara.com.br/og.jpg",
     "sameAs":[
       "https://www.instagram.com/raphaelmalfara/"
     ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "@id":"https://www.barbeariaraphaelmalfara.com.br/#website",
+    "url":"https://www.barbeariaraphaelmalfara.com.br/",
+    "name":"Barbearia Raphael Malfara",
+    "publisher":{
+      "@id":"https://www.barbeariaraphaelmalfara.com.br/#organization"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ImageObject",
+    "@id":"https://www.barbeariaraphaelmalfara.com.br/#primaryimage",
+    "contentUrl":"https://www.barbeariaraphaelmalfara.com.br/og.jpg",
+    "url":"https://www.barbeariaraphaelmalfara.com.br/og.jpg",
+    "caption":"Barbearia Raphael Malfara em Monte Aprazível",
+    "representativeOfPage":true
   }
   </script>
 
@@ -561,6 +670,22 @@
           "@type":"Answer",
           "text":"A Barbearia Raphael Malfara fica na Rua Osvaldo Aranha, 772, em Monte Aprazível/SP."
         }
+      },
+      {
+        "@type":"Question",
+        "name":"Faz cabelo e barba no mesmo horário?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Sim. A barbearia oferece combo de cabelo e barba com atendimento individual e horário reservado."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Como agendar horário na Barbearia Raphael Malfara?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Você pode agendar pelo botão de reserva online, pelo WhatsApp ou entrando em contato pelo telefone da barbearia."
+        }
       }
     ]
   }
@@ -570,25 +695,47 @@
 <body>
 
   <header class="site-header" id="Inicio">
-    <div class="banner-mobile" aria-hidden="true"></div>
+    <img class="hero-media" src="banner.png" alt="Interior e identidade visual da Barbearia Raphael Malfara em Monte Aprazível" width="1600" height="900" fetchpriority="high" />
 
     <div class="wrap">
-      <div class="brand">
-        <img src="logo.png" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" width="56" height="56" />
-        <div>
-          <h1 class="name">Barbearia Raphael Malfara</h1>
-          <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • <a class="tel-link" href="tel:+5517991042868" title="Ligar para a Barbearia Raphael Malfara">(17) 99104-2868</a></p>
+      <div class="topbar">
+        <div class="brand">
+          <img src="logo.png" alt="Logo da Barbearia Raphael Malfara em Monte Aprazível" loading="eager" width="60" height="60" />
+          <div>
+            <h1 class="name">Barbeiro em Monte Aprazível | Barbearia Raphael Malfara</h1>
+            <p class="sub">Monte Aprazível/SP • R. Osvaldo Aranha, 772 • <a class="tel-link" href="tel:+5517991042868" title="Ligar para a Barbearia Raphael Malfara">(17) 99104-2868</a></p>
+          </div>
+        </div>
+
+        <div class="top-actions">
+          <a class="btn outline" href="/" title="Página inicial da Barbearia Raphael Malfara">Início</a>
+          <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
+          <a class="btn outline" href="corte-masculino-monte-aprazivel.html" title="Corte masculino em Monte Aprazível">Cabelo</a>
+          <a class="btn outline" href="barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível">Barba</a>
+          <a class="btn outline" href="galeria.html" title="Ver galeria de fotos da Barbearia Raphael Malfara">Galeria</a>
+          <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Falar no WhatsApp da Barbearia Raphael Malfara">WhatsApp</a>
+          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Agendar horário</a>
+          <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram da Barbearia Raphael Malfara">Instagram</a>
         </div>
       </div>
 
-      <div class="top-actions">
-        <a class="btn outline" href="/" title="Página inicial da Barbearia Raphael Malfara">Início</a>
-        <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
-        <a class="btn outline" href="corte-masculino-monte-aprazivel.html" title="Corte masculino em Monte Aprazível">Cabelo</a>
-        <a class="btn outline" href="barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível">Barba</a>
-        <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Fazer reserva</a>
-        <a class="btn outline" href="galeria.html" title="Ver galeria de fotos da Barbearia Raphael Malfara">Galeria</a>
-        <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram da Barbearia Raphael Malfara">Instagram</a>
+      <div class="hero-copy">
+        <div class="hero-kicker">Corte masculino, barba e atendimento com hora marcada</div>
+        <p class="hero-title">Barbearia em Monte Aprazível para quem procura corte bem feito, barba alinhada e atendimento profissional.</p>
+        <p class="hero-text">
+          A Barbearia Raphael Malfara oferece corte masculino, barba, degradê e combo com atendimento individual, pontualidade e acabamento caprichado. Faça sua reserva online ou fale direto pelo WhatsApp.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário na Barbearia Raphael Malfara">Reservar agora</a>
+          <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Chamar no WhatsApp para agendar">Chamar no WhatsApp</a>
+        </div>
+
+        <div class="hero-proof">
+          <span class="chip">Mais de 20 anos de experiência</span>
+          <span class="chip">Mais de 200 jogadores profissionais atendidos</span>
+          <span class="chip">Atendimento com horário marcado</span>
+        </div>
       </div>
     </div>
   </header>
@@ -601,7 +748,7 @@
           <h2 class="headline">Corte masculino e barba com atendimento exclusivo</h2>
           <p class="subheadline">Barbeiro e cabeleireiro masculino em Monte Aprazível/SP</p>
           <p class="text">
-            Na Barbearia Raphael Malfara, em Monte Aprazível/SP, você encontra atendimento com hora marcada, acabamento caprichado e uma experiência pensada para valorizar seu estilo. Seja para um visual clássico, um degradê moderno ou uma barba alinhada, cada serviço é realizado com técnica, atenção aos detalhes e foco em resultado. Faça sua reserva online e garanta seu horário com mais conforto, pontualidade e qualidade profissional.
+            Na Barbearia Raphael Malfara, em Monte Aprazível/SP, você encontra atendimento com hora marcada, acabamento caprichado e uma experiência pensada para valorizar seu estilo. Seja para um visual clássico, um degradê moderno ou uma barba alinhada, cada serviço é realizado com técnica, atenção aos detalhes e foco em resultado.
           </p>
 
           <div class="line"></div>
@@ -626,14 +773,15 @@
           <div class="line"></div>
 
           <div class="gallery-actions">
-            <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Conheça quem somos</a>
+            <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Fazer reserva</a>
+            <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Conheça nossa história</a>
           </div>
         </div>
       </div>
 
       <div class="card" id="Horarios">
         <div class="pad">
-          <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Horários de funcionamento</h2>
+          <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Horários de funcionamento</h2>
 
           <div class="hours">
             <div class="hrow"><span class="d">Terça</span><span>14:00 – 21:00</span></div>
@@ -647,14 +795,14 @@
 
           <div class="line"></div>
 
-          <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Fazer reserva</a>
+          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva online">Agendar horário</a>
         </div>
       </div>
     </section>
 
     <section class="card" id="Diferenciais">
       <div class="pad">
-        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Diferenciais da Barbearia Raphael Malfara</h2>
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Diferenciais da Barbearia Raphael Malfara</h2>
         <p class="text">
           Experiência, tradição e atendimento personalizado para quem procura mais do que um corte de cabelo. Aqui, cada cliente recebe atenção individual, acabamento profissional e uma experiência de barbearia feita com técnica e respeito ao seu estilo.
         </p>
@@ -668,8 +816,8 @@
           </div>
 
           <div class="feature">
-            <p class="t">Mais de 200 jogadores atendidos</p>
-            <p class="d">Histórico com atletas profissionais, artistas e clientes que valorizam confiança e qualidade.</p>
+            <p class="t">Mais de 200 jogadores profissionais atendidos</p>
+            <p class="d">Histórico com atletas profissionais e clientes que valorizam confiança, imagem e qualidade no acabamento.</p>
           </div>
 
           <div class="feature">
@@ -687,7 +835,7 @@
 
     <section class="card" id="Servicos">
       <div class="pad">
-        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Serviços e valores</h2>
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Serviços e valores</h2>
         <p class="text">
           Serviços realizados com atendimento individual, horário reservado e acabamento profissional para valorizar o seu visual em cada detalhe.
         </p>
@@ -696,37 +844,51 @@
 
         <div class="services" role="list">
           <div class="service" role="listitem">
-            <p class="t">Corte</p>
+            <p class="t">Corte masculino</p>
             <p class="price">R$ 50,00</p>
+            <small>Acabamento profissional e atendimento individual.</small>
           </div>
 
           <div class="service" role="listitem">
             <p class="t">Barba</p>
             <p class="price">R$ 50,00</p>
+            <small>Alinhamento, desenho e cuidado no detalhe.</small>
           </div>
 
           <div class="service" role="listitem">
-            <p class="t">Combo</p>
+            <p class="t">Combo cabelo + barba</p>
             <p class="price">R$ 100,00</p>
+            <small>Visual completo com horário reservado.</small>
           </div>
 
           <div class="service" role="listitem">
             <p class="t">Combo + sobrancelha</p>
             <p class="price">R$ 120,00</p>
+            <small>Pacote completo para quem quer sair pronto.</small>
           </div>
+        </div>
+
+        <div class="cta-band">
+          <p>Escolha seu serviço e reserve agora seu horário.</p>
+          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Agendar agora</a>
         </div>
       </div>
     </section>
 
     <section class="card" id="Fotos">
       <div class="pad">
-        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Galeria de fotos</h2>
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Galeria de fotos</h2>
 
         <div class="gallery">
           <div class="ph"><img src="foto01.png" alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" width="300" height="300"></div>
           <div class="ph"><img src="foto02.png" alt="Barbeiro em Monte Aprazível realizando corte masculino" loading="lazy" width="300" height="300"></div>
           <div class="ph"><img src="foto03.png" alt="Serviço de barba na Barbearia Raphael Malfara em Monte Aprazível" loading="lazy" width="300" height="300"></div>
           <div class="ph"><img src="foto04.png" alt="Corte degradê masculino em Monte Aprazível SP" loading="lazy" width="300" height="300"></div>
+        </div>
+
+        <div class="cta-band">
+          <p>Gostou dos cortes e do acabamento? Reserve seu horário.</p>
+          <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Reservar horário agora">Reservar agora</a>
         </div>
 
         <div class="gallery-actions">
@@ -739,7 +901,7 @@
     <section class="grid">
       <div class="card" id="Contato">
         <div class="pad">
-          <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Contato</h2>
+          <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Contato</h2>
 
           <div class="kv">
             <div class="row">
@@ -759,7 +921,8 @@
           <div class="line"></div>
 
           <div class="top-actions" style="justify-content:flex-start">
-            <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Fazer reserva</a>
+            <a class="btn gold strong" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar corte ou barba">Agendar horário</a>
+            <a class="btn wa" href="https://wa.me/5517991042868?text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio+na+Barbearia+Raphael+Malfara." target="_blank" rel="noopener" title="Falar no WhatsApp">WhatsApp</a>
             <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
             <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram oficial da Barbearia Raphael Malfara">Instagram</a>
             <a class="btn outline" href="https://maps.google.com/?q=R.+Osvaldo+Aranha,+772,+Monte+Apraz%C3%ADvel+-+SP" target="_blank" rel="noopener" title="Abrir localização da barbearia no Google Maps">Abrir no Google Maps</a>
@@ -769,7 +932,7 @@
 
       <div class="card">
         <div class="pad">
-          <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Como chegar</h2>
+          <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Como chegar</h2>
           <iframe
             class="map"
             loading="lazy"
@@ -783,7 +946,7 @@
 
     <section class="card" id="SeoLocal">
       <div class="pad">
-        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Barbeiro e cabeleireiro masculino em Monte Aprazível</h2>
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Barbeiro e cabeleireiro masculino em Monte Aprazível</h2>
         <p class="text">
           A <a href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Barbearia Raphael Malfara</a> é uma barbearia em Monte Aprazível/SP especializada em corte masculino, barba e degradê. O atendimento é feito com hora marcada, garantindo mais conforto, pontualidade e atenção em cada serviço.
         </p>
@@ -800,7 +963,7 @@
 
     <section class="card" id="Escolher">
       <div class="pad">
-        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Por que escolher a Barbearia Raphael Malfara</h2>
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Por que escolher a Barbearia Raphael Malfara</h2>
 
         <div class="feature-grid">
           <div class="feature">
@@ -826,15 +989,32 @@
       </div>
     </section>
 
-    <section class="card" id="Jogadores">
+    <section class="card" id="Historia">
       <div class="pad">
-        <h2 style="margin:0 0 10px; font-size:16px; font-weight:650;">Trajetória com jogadores de futebol e clientes especiais</h2>
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">História da Barbearia Raphael Malfara</h2>
         <p class="text">
-          Ao longo da sua trajetória como barbeiro profissional, Raphael Malfara já atendeu e também atende jogadores de futebol e clientes de diferentes lugares. Esses momentos fazem parte da história do seu trabalho como barbeiro e refletem a confiança conquistada ao longo dos anos.
+          A história da Barbearia Raphael Malfara é construída com anos de dedicação à barbearia masculina, aperfeiçoamento técnico e atendimento voltado para qualidade. Ao longo da trajetória profissional, Raphael Malfara consolidou seu nome como barbeiro pela consistência no acabamento, pelo cuidado com cada cliente e pela seriedade no trabalho.
         </p>
         <div class="line"></div>
         <p class="text">
-          A galeria da barbearia reúne alguns desses registros, além de fotos com clientes, camisas e chuteiras autografadas e outros momentos especiais da trajetória de Raphael Malfara como barbeiro.
+          Hoje, a barbearia em Monte Aprazível mantém essa mesma base: atendimento com hora marcada, ambiente confortável, respeito ao estilo de cada cliente e foco em entregar um resultado que valorize a imagem de quem senta na cadeira.
+        </p>
+        <div class="line"></div>
+        <div class="gallery-actions">
+          <a class="btn outline" href="quem-somos.html" title="Conheça a história completa da Barbearia Raphael Malfara">Ler a história completa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="Jogadores">
+      <div class="pad">
+        <h2 style="margin:0 0 10px; font-size:18px; font-weight:700;">Trajetória com jogadores de futebol profissionais</h2>
+        <p class="text">
+          Ao longo da sua trajetória como barbeiro profissional, Raphael Malfara já atendeu jogadores de futebol profissionais e clientes de diferentes lugares. Esses momentos fazem parte da história do seu trabalho como barbeiro e reforçam a confiança construída ao longo dos anos.
+        </p>
+        <div class="line"></div>
+        <p class="text">
+          A galeria da barbearia reúne alguns desses registros, além de fotos com clientes, camisas e chuteiras autografadas e outros momentos especiais que ajudam a contar a trajetória de Raphael Malfara na barbearia masculina.
         </p>
         <div class="line"></div>
         <div class="gallery-actions">
@@ -846,7 +1026,7 @@
 
     <section class="card" id="faq">
       <div class="pad">
-        <h2 style="margin:0 0 10px;font-size:16px;font-weight:650;">Perguntas frequentes</h2>
+        <h2 style="margin:0 0 10px;font-size:18px;font-weight:700;">Perguntas frequentes</h2>
 
         <div class="line"></div>
 
@@ -862,6 +1042,16 @@
 
         <p class="text"><strong>Onde fica a barbearia?</strong><br>
         A Barbearia Raphael Malfara fica na Rua Osvaldo Aranha, 772, em Monte Aprazível/SP.</p>
+
+        <div class="line"></div>
+
+        <p class="text"><strong>Faz cabelo e barba no mesmo horário?</strong><br>
+        Sim. A barbearia oferece combo de cabelo e barba com atendimento individual e horário reservado.</p>
+
+        <div class="line"></div>
+
+        <p class="text"><strong>Como agendar horário?</strong><br>
+        Você pode agendar pelo botão de reserva online, pelo WhatsApp ou entrando em contato pelo telefone da barbearia.</p>
 
         <div class="line"></div>
 
