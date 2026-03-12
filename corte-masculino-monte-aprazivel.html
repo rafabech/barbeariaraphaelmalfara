@@ -15,7 +15,8 @@
   <link rel="apple-touch-icon" href="/logo.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="preload" as="image" href="corte-masculino-barbearia-raphael-malfara-monte-aprazivel.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="corte-masculino-barbearia-raphael-malfara-monte-aprazivel.webp" media="(min-width: 981px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/logo.png" media="(max-width: 980px)" fetchpriority="high" />
 
   <meta name="author" content="Barbearia Raphael Malfara" />
   <meta name="format-detection" content="telephone=yes" />
@@ -47,10 +48,9 @@
       --line:rgba(255,255,255,.14);
       --gold:#f6c453;
       --ig:#E1306C;
-      --wa:#25D366;
       --radius:18px;
       --max:1160px;
-      --shadow:0 10px 26px rgba(0,0,0,.28);
+      --shadow:0 10px 26px rgba(0,0,0,.26);
     }
 
     *{box-sizing:border-box}
@@ -170,7 +170,7 @@
 
     .hero-image{
       width:100%;
-      max-width:540px;
+      max-width:760px;
       display:block;
       object-fit:contain;
       border-radius:14px;
@@ -200,7 +200,11 @@
       margin:0;
     }
 
-    .line{height:1px;background:var(--line);margin:16px 0}
+    .line{
+      height:1px;
+      background:var(--line);
+      margin:16px 0;
+    }
 
     .grid{
       display:grid;
@@ -352,8 +356,15 @@
       .feature-grid{grid-template-columns:1fr}
       .brand img{width:48px;height:48px}
       .headline{font-size:30px}
-      .hero-image-wrap{padding:10px;background:#030303}
-      .hero-image{max-width:300px;width:100%;border-radius:12px}
+      .hero-image-wrap{
+        padding:10px;
+        background:#030303;
+      }
+      .hero-image{
+        max-width:260px;
+        width:100%;
+        border-radius:12px;
+      }
       .card{box-shadow:none}
       .feature,.row{background:rgba(255,255,255,.03)}
       .top-actions{
@@ -383,7 +394,7 @@
       .row{padding:9px 10px}
       .feature{padding:12px}
       .hero-image-wrap{padding:8px}
-      .hero-image{max-width:260px}
+      .hero-image{max-width:220px}
       .wa-text{display:none}
       .wa-float{
         width:56px;
@@ -553,16 +564,19 @@
 
     <section class="card">
       <div class="hero-image-wrap">
-        <img
-          class="hero-image"
-          src="corte-masculino-barbearia-raphael-malfara-monte-aprazivel.webp"
-          alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-          width="1600"
-          height="900"
-        />
+        <picture>
+          <source media="(max-width: 980px)" srcset="/logo.png" type="image/png" />
+          <img
+            class="hero-image"
+            src="corte-masculino-barbearia-raphael-malfara-monte-aprazivel.webp"
+            alt="Corte masculino na Barbearia Raphael Malfara em Monte Aprazível"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            width="1600"
+            height="900"
+          />
+        </picture>
       </div>
 
       <div class="pad">
