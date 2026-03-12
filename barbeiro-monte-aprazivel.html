@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="/logo.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="preload" as="image" href="corte-de-barba-barbeiro-raphael-malfara-monte-aprazivel.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="corte-de-barba-barbeiro-raphael-malfara-monte-aprazivel.webp" media="(min-width: 981px)" fetchpriority="high" />
 
   <meta name="author" content="Barbearia Raphael Malfara" />
   <meta name="format-detection" content="telephone=yes" />
@@ -175,6 +175,23 @@
       display:block;
       object-fit:contain;
       border-radius:14px;
+      border:1px solid var(--line);
+      background:#000;
+    }
+
+    .hero-image-mobile-wrap{
+      display:none;
+      justify-content:center;
+      align-items:center;
+      padding:12px 0 0;
+    }
+
+    .hero-image-mobile{
+      width:100%;
+      max-width:220px;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
       border:1px solid var(--line);
       background:#000;
     }
@@ -358,13 +375,10 @@
       .brand img{width:48px;height:48px}
       .headline{font-size:30px}
       .hero-image-wrap{
-        padding:10px;
-        background:#030303;
+        display:none;
       }
-      .hero-image{
-        max-width:300px;
-        width:100%;
-        border-radius:12px;
+      .hero-image-mobile-wrap{
+        display:flex;
       }
       .card{
         box-shadow:none;
@@ -388,7 +402,6 @@
       .text{font-size:15px}
       .row{padding:9px 10px}
       .feature{padding:12px}
-      .hero-image{max-width:260px}
       .wa-text{display:none}
       .wa-float{
         width:56px;
@@ -404,6 +417,9 @@
         height:56px;
         border-radius:18px;
       }
+      .hero-image-mobile{
+        max-width:210px;
+      }
     }
   </style>
 
@@ -416,7 +432,7 @@
     "serviceType":"Barba, barboterapia e acabamento com toalha quente",
     "url":"https://www.barbeariaraphaelmalfara.com.br/barbeiro-monte-aprazivel.html",
     "description":"Serviço de barba em Monte Aprazível com barboterapia, toalha quente, acabamento profissional e atendimento com hora marcada.",
-    "image":"https://www.barbeariaraphaelmalfara.com.br/corte-de-barba-barbeiro-raphael-malfara-monte-aprazivel.jpeg",
+    "image":"https://www.barbeariaraphaelmalfara.com.br/corte-de-barba-barbeiro-raphael-malfara-monte-aprazivel.webp",
     "provider":{
       "@type":"BarberShop",
       "@id":"https://www.barbeariaraphaelmalfara.com.br/#barbershop",
@@ -585,6 +601,18 @@
         <p class="text">
           Se você procura <strong>barba em Monte Aprazível</strong>, a Barbearia Raphael Malfara oferece atendimento com hora marcada, acabamento caprichado e técnicas tradicionais para valorizar seu visual e deixar a barba alinhada. Raphael Malfara atua há mais de <strong>20 anos</strong> na profissão, unindo experiência, precisão e cuidado em cada atendimento.
         </p>
+
+        <div class="hero-image-mobile-wrap">
+          <img
+            class="hero-image-mobile"
+            src="corte-de-barba-barbeiro-raphael-malfara-monte-aprazivel.webp"
+            alt="Serviço de barba na Barbearia Raphael Malfara em Monte Aprazível"
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="1200"
+          />
+        </div>
 
         <div class="line"></div>
 
