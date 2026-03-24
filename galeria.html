@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#000000" />
 
-  <title>Galeria | Barbearia Raphael Malfara em Monte Aprazível/SP | Cortes, Clientes e Jogadores de Futebol Profissionais</title>
-  <meta name="description" content="Galeria da Barbearia Raphael Malfara em Monte Aprazível/SP com fotos de cortes masculinos, clientes, jogadores de futebol profissionais e momentos especiais da barbearia." />
+  <title>Galeria | Barbearia Raphael Malfara em Monte Aprazível/SP | Cortes, Clientes e Jogadores</title>
+  <meta name="description" content="Galeria da Barbearia Raphael Malfara em Monte Aprazível/SP com fotos de cortes masculinos, barba, clientes, jogadores de futebol profissionais e momentos especiais da trajetória da barbearia." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://www.barbeariaraphaelmalfara.com.br/galeria.html" />
 
   <link rel="icon" href="/logo.png" type="image/png" sizes="48x48" />
   <link rel="shortcut icon" href="/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <meta name="author" content="Barbearia Raphael Malfara" />
   <meta name="format-detection" content="telephone=yes" />
@@ -25,15 +26,15 @@
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Barbearia Raphael Malfara" />
   <meta property="og:title" content="Galeria | Barbearia Raphael Malfara" />
-  <meta property="og:description" content="Fotos de cortes masculinos, clientes, jogadores de futebol profissionais e momentos especiais na Barbearia Raphael Malfara em Monte Aprazível." />
+  <meta property="og:description" content="Fotos de cortes masculinos, barba, clientes, jogadores de futebol profissionais e momentos especiais da Barbearia Raphael Malfara em Monte Aprazível." />
   <meta property="og:url" content="https://www.barbeariaraphaelmalfara.com.br/galeria.html" />
-  <meta property="og:image" content="https://www.barbeariaraphaelmalfara.com.br/foto01.png" />
-  <meta property="og:image:secure_url" content="https://www.barbeariaraphaelmalfara.com.br/foto01.png" />
+  <meta property="og:image" content="https://www.barbeariaraphaelmalfara.com.br/foto01.webp" />
+  <meta property="og:image:secure_url" content="https://www.barbeariaraphaelmalfara.com.br/foto01.webp" />
   <meta property="og:image:alt" content="Galeria da Barbearia Raphael Malfara em Monte Aprazível" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Galeria | Barbearia Raphael Malfara" />
-  <meta name="twitter:description" content="Fotos de cortes masculinos, clientes e jogadores de futebol profissionais na Barbearia Raphael Malfara." />
-  <meta name="twitter:image" content="https://www.barbeariaraphaelmalfara.com.br/foto01.png" />
+  <meta name="twitter:description" content="Fotos de cortes masculinos, barba, clientes e jogadores de futebol profissionais na Barbearia Raphael Malfara." />
+  <meta name="twitter:image" content="https://www.barbeariaraphaelmalfara.com.br/foto01.webp" />
 
   <style>
     :root{
@@ -53,7 +54,7 @@
       margin:0;
       background:var(--bg);
       color:var(--text);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
     }
@@ -125,6 +126,9 @@
       background:rgba(255,255,255,.06);
       font-weight:600;
       transition:transform .12s ease;
+      min-height:46px;
+      touch-action:manipulation;
+      -webkit-tap-highlight-color:transparent;
     }
 
     .btn:hover{transform:translateY(-1px)}
@@ -152,8 +156,14 @@
       margin:0;
       color:var(--muted);
       line-height:1.6;
-      max-width:760px;
+      max-width:860px;
       font-size:14px;
+    }
+
+    .line{
+      height:1px;
+      background:var(--line);
+      margin:16px 0;
     }
 
     .card{
@@ -186,9 +196,62 @@
       display:block;
     }
 
+    .info-block{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:18px;
+      margin-top:16px;
+    }
+
+    .info-block h2{
+      margin:0 0 8px;
+      font-size:18px;
+    }
+
+    .info-block p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:14px;
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+
+    .feature{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(255,255,255,.04);
+    }
+
+    .feature .t{
+      margin:0 0 6px;
+      font-weight:700;
+      font-size:14px;
+      color:var(--text);
+    }
+
+    .feature .d{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.5;
+    }
+
     .bottom{
       text-align:center;
       margin-top:25px;
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
     }
 
     .modal{
@@ -259,14 +322,20 @@
     .wa-text strong{font-size:13px;line-height:1.1}
     .wa-text span{font-size:12px;color:rgba(255,255,255,.75);line-height:1.1}
 
-    @media(max-width:1100px){ .grid{grid-template-columns:repeat(4,1fr)} }
+    @media(max-width:1100px){
+      .grid{grid-template-columns:repeat(4,1fr)}
+      .feature-grid{grid-template-columns:repeat(2,1fr)}
+    }
+
     @media(max-width:900px){
       .grid{grid-template-columns:repeat(3,1fr)}
       .top-actions{width:100%;justify-content:flex-start}
       .brand img{width:48px;height:48px}
     }
+
     @media(max-width:560px){
       .grid{grid-template-columns:repeat(2,1fr)}
+      .feature-grid{grid-template-columns:1fr}
       .wa-text{display:none}
       .wa-float{
         width:56px;
@@ -290,7 +359,7 @@
     "@id":"https://www.barbeariaraphaelmalfara.com.br/galeria.html#collectionpage",
     "url":"https://www.barbeariaraphaelmalfara.com.br/galeria.html",
     "name":"Galeria | Barbearia Raphael Malfara",
-    "description":"Galeria da Barbearia Raphael Malfara em Monte Aprazível/SP com fotos de cortes masculinos, clientes, jogadores de futebol profissionais e momentos especiais."
+    "description":"Galeria da Barbearia Raphael Malfara em Monte Aprazível/SP com fotos de cortes masculinos, barba, clientes, jogadores de futebol profissionais e momentos especiais."
   }
   </script>
 
@@ -301,7 +370,7 @@
     "@id":"https://www.barbeariaraphaelmalfara.com.br/#barbershop",
     "name":"Barbearia Raphael Malfara",
     "url":"https://www.barbeariaraphaelmalfara.com.br/",
-    "image":"https://www.barbeariaraphaelmalfara.com.br/foto01.png",
+    "image":"https://www.barbeariaraphaelmalfara.com.br/foto01.webp",
     "logo":"https://www.barbeariaraphaelmalfara.com.br/logo.png",
     "telephone":"+55 17 99104-2868",
     "priceRange":"$$",
@@ -358,23 +427,40 @@
         </div>
       </div>
 
-      <div class="top-actions">
-        <a class="btn outline" href="index.html" title="Voltar para a página inicial">Início</a>
-        <a class="btn outline" href="quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
-        <a class="btn outline" href="corte-masculino-monte-aprazivel.html" title="Corte masculino em Monte Aprazível">Cabelo</a>
-        <a class="btn outline" href="barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível">Barba</a>
+      <nav class="top-actions" aria-label="Menu principal">
+        <a class="btn outline" href="https://www.barbeariaraphaelmalfara.com.br/" title="Voltar para a página inicial">Início</a>
+        <a class="btn outline" href="https://www.barbeariaraphaelmalfara.com.br/quem-somos.html" title="Conheça a história da Barbearia Raphael Malfara">Quem Somos</a>
+        <a class="btn outline" href="https://www.barbeariaraphaelmalfara.com.br/corte-masculino-monte-aprazivel.html" title="Corte masculino em Monte Aprazível">Cabelo</a>
+        <a class="btn outline" href="https://www.barbeariaraphaelmalfara.com.br/barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível">Barba</a>
+        <a class="btn outline" href="https://www.barbeariaraphaelmalfara.com.br/galeria.html" title="Ver galeria da Barbearia Raphael Malfara">Galeria</a>
         <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Fazer reserva na Barbearia Raphael Malfara">Faça sua reserva</a>
-        <a class="btn outline" href="galeria.html" title="Ver galeria da Barbearia Raphael Malfara">Galeria</a>
         <a class="btn ig" href="https://www.instagram.com/raphaelmalfara/" target="_blank" rel="noopener" title="Instagram da Barbearia Raphael Malfara">Instagram</a>
-      </div>
+      </nav>
     </div>
   </header>
 
   <div class="wrap">
     <section class="intro">
+      <nav aria-label="Breadcrumb" style="margin-bottom:12px;">
+        <a class="btn outline" style="padding:8px 10px; border-radius:12px; font-size:13px;" href="https://www.barbeariaraphaelmalfara.com.br/" title="Voltar para a página inicial">Início</a>
+        <span style="margin:0 8px; color:var(--muted);">›</span>
+        <span style="color:var(--muted); font-size:14px;">Galeria</span>
+      </nav>
+
       <h1>Galeria da Barbearia Raphael Malfara</h1>
       <p>
-        A galeria mostra cortes masculinos realizados na Barbearia Raphael Malfara em Monte Aprazível/SP, além de momentos especiais com clientes e jogadores de futebol profissionais que passaram pela barbearia, incluindo fotos, camisas e chuteiras autografadas.
+        A galeria mostra cortes masculinos, serviços de barba, clientes atendidos e momentos especiais da trajetória da <strong>Barbearia Raphael Malfara em Monte Aprazível/SP</strong>. Aqui você encontra registros reais do trabalho realizado por Raphael Malfara, incluindo fotos com clientes, jogadores de futebol profissionais e lembranças importantes da sua história na barbearia masculina.
+      </p>
+
+      <div class="line"></div>
+
+      <p>
+        Veja também a página de
+        <a href="https://www.barbeariaraphaelmalfara.com.br/corte-masculino-monte-aprazivel.html" title="Corte masculino em Monte Aprazível"><strong>corte masculino em Monte Aprazível</strong></a>,
+        conheça mais sobre o trabalho de
+        <a href="https://www.barbeariaraphaelmalfara.com.br/barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível"><strong>barba e barboterapia</strong></a>
+        e leia a história da
+        <a href="https://www.barbeariaraphaelmalfara.com.br/quem-somos.html" title="Quem Somos da Barbearia Raphael Malfara"><strong>Barbearia Raphael Malfara</strong></a>.
       </p>
     </section>
 
@@ -427,8 +513,40 @@
       </div>
     </div>
 
+    <section class="info-block">
+      <h2>Mais do que fotos: prova real do trabalho da barbearia</h2>
+      <p>
+        Esta galeria ajuda a mostrar para clientes e para o Google que a Barbearia Raphael Malfara tem trabalho real, ambiente próprio, clientes atendidos e uma trajetória consolidada na barbearia masculina. Isso reforça a confiança de quem visita o site e também ajuda a dar mais relevância para a página nas buscas locais.
+      </p>
+
+      <div class="line"></div>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <p class="t"><a href="https://www.barbeariaraphaelmalfara.com.br/quem-somos.html" title="Quem Somos da Barbearia Raphael Malfara">Quem Somos</a></p>
+          <p class="d">Conheça a história, a experiência e a trajetória profissional de Raphael Malfara.</p>
+        </div>
+
+        <div class="feature">
+          <p class="t"><a href="https://www.barbeariaraphaelmalfara.com.br/corte-masculino-monte-aprazivel.html" title="Corte masculino em Monte Aprazível">Corte masculino em Monte Aprazível</a></p>
+          <p class="d">Veja detalhes sobre cortes clássicos, modernos, degradê e atendimento infantil.</p>
+        </div>
+
+        <div class="feature">
+          <p class="t"><a href="https://www.barbeariaraphaelmalfara.com.br/barbeiro-monte-aprazivel.html" title="Barba em Monte Aprazível">Barba em Monte Aprazível</a></p>
+          <p class="d">Saiba mais sobre barboterapia, toalha quente e acabamento profissional para barba.</p>
+        </div>
+
+        <div class="feature">
+          <p class="t"><a href="https://www.barbeariaraphaelmalfara.com.br/" title="Página inicial da Barbearia Raphael Malfara">Página inicial</a></p>
+          <p class="d">Volte para a home e acesse serviços, horários, valores e formas de agendamento.</p>
+        </div>
+      </div>
+    </section>
+
     <div class="bottom">
-      <a class="btn outline" href="index.html">← Voltar para o site</a>
+      <a class="btn outline" href="https://www.barbeariaraphaelmalfara.com.br/" title="Voltar para o site">← Voltar para o site</a>
+      <a class="btn gold" href="https://booksy.com/pt-br/instant-experiences/widget/377595" target="_blank" rel="noopener" title="Agendar horário na Barbearia Raphael Malfara">Faça sua reserva</a>
     </div>
   </div>
 
@@ -438,7 +556,7 @@
   </div>
 
   <a class="wa-float"
-     href="https://wa.me/5517991042868?text=Olá!%20Gostaria%20de%20informações%20sobre%20a%20Barbearia%20Raphael%20Malfara."
+     href="https://wa.me/5517991042868?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Barbearia%20Raphael%20Malfara."
      target="_blank"
      rel="noopener"
      aria-label="WhatsApp da Barbearia Raphael Malfara"
